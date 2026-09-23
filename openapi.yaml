@@ -1,0 +1,440 @@
+openapi: 3.1.0
+info:
+  title: AMYPO Unified Platform API
+  version: 1.0.0
+  description: PS1 Router (POST /api/v1/route, ...) + PS7 Q&A (POST /api/v1/ask, ...).
+    See CLAUDE.md for the full spec.
+servers:
+- url: http://router:8000
+  description: router service (PS1)
+- url: http://qa:8001
+  description: qa service (PS7)
+paths:
+  /api/v1/health:
+    get:
+      summary: Health
+      operationId: health_api_v1_health_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+      tags:
+      - qa
+      - router
+  /api/v1/resource-status:
+    get:
+      summary: Resource Status
+      operationId: resource_status_api_v1_resource_status_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResourceStatus'
+      tags:
+      - router
+  /api/v1/route:
+    post:
+      summary: Route
+      operationId: route_api_v1_route_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RouteRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+      tags:
+      - router
+  /api/v1/admin/simulate:
+    post:
+      summary: Admin Simulate
+      operationId: admin_simulate_api_v1_admin_simulate_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SimulateRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                additionalProperties: true
+                type: object
+                title: Response Admin Simulate Api V1 Admin Simulate Post
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+      tags:
+      - router
+  /api/v1/admin/decisions:
+    get:
+      summary: Admin Decisions
+      operationId: admin_decisions_api_v1_admin_decisions_get
+      parameters:
+      - name: since
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Since
+      - name: limit
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 50
+          title: Limit
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DecisionLogEntry'
+                title: Response Admin Decisions Api V1 Admin Decisions Get
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+      tags:
+      - router
+  /api/v1/ask:
+    post:
+      summary: Ask
+      operationId: ask_api_v1_ask_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AskRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AskResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+      tags:
+      - qa
+  /api/v1/admin/reindex:
+    post:
+      summary: Admin Reindex
+      operationId: admin_reindex_api_v1_admin_reindex_post
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                additionalProperties: true
+                type: object
+                title: Response Admin Reindex Api V1 Admin Reindex Post
+      tags:
+      - qa
+components:
+  schemas:
+    DecisionLogEntry:
+      properties:
+        request_id:
+          type: string
+          title: Request Id
+        ts:
+          type: string
+          title: Ts
+        query:
+          type: string
+          title: Query
+        routed_to:
+          type: string
+          enum:
+          - local_model
+          - cloud_api
+          - cache
+          - offline_fallback
+          title: Routed To
+        reasoning:
+          type: string
+          title: Reasoning
+        latency_ms:
+          type: integer
+          title: Latency Ms
+        estimated_cost:
+          type: number
+          title: Estimated Cost
+      type: object
+      required:
+      - request_id
+      - ts
+      - query
+      - routed_to
+      - reasoning
+      - latency_ms
+      - estimated_cost
+      title: DecisionLogEntry
+    HTTPValidationError:
+      properties:
+        detail:
+          items:
+            $ref: '#/components/schemas/ValidationError'
+          type: array
+          title: Detail
+      type: object
+      title: HTTPValidationError
+    ResourceStatus:
+      properties:
+        ram_available_mb:
+          type: number
+          title: Ram Available Mb
+        cpu_load_pct:
+          type: number
+          title: Cpu Load Pct
+        bandwidth_kbps:
+          type: number
+          title: Bandwidth Kbps
+        api_quota_remaining:
+          type: number
+          title: Api Quota Remaining
+        source:
+          type: string
+          enum:
+          - live
+          - scenario
+          - manual
+          title: Source
+        sampled_at:
+          type: string
+          title: Sampled At
+      type: object
+      required:
+      - ram_available_mb
+      - cpu_load_pct
+      - bandwidth_kbps
+      - api_quota_remaining
+      - source
+      - sampled_at
+      title: ResourceStatus
+    RouteRequest:
+      properties:
+        request_id:
+          type: string
+          title: Request Id
+        query:
+          type: string
+          title: Query
+        complexity_hint:
+          anyOf:
+          - type: string
+            enum:
+            - low
+            - medium
+            - high
+          - type: 'null'
+          title: Complexity Hint
+        max_tokens:
+          type: integer
+          title: Max Tokens
+          default: 256
+        user_scope:
+          type: string
+          title: User Scope
+          default: global
+        dry_run:
+          type: boolean
+          title: Dry Run
+          default: false
+        messages:
+          anyOf:
+          - items:
+              additionalProperties:
+                type: string
+              type: object
+            type: array
+          - type: 'null'
+          title: Messages
+      type: object
+      required:
+      - request_id
+      - query
+      title: RouteRequest
+    SimulateRequest:
+      properties:
+        mode:
+          type: string
+          enum:
+          - manual
+          - scenario
+          - live
+          title: Mode
+        ram_available_mb:
+          anyOf:
+          - type: number
+          - type: 'null'
+          title: Ram Available Mb
+        bandwidth_kbps:
+          anyOf:
+          - type: number
+          - type: 'null'
+          title: Bandwidth Kbps
+        api_quota_remaining:
+          anyOf:
+          - type: number
+          - type: 'null'
+          title: Api Quota Remaining
+        cpu_load_pct:
+          anyOf:
+          - type: number
+          - type: 'null'
+          title: Cpu Load Pct
+        scenario_file:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Scenario File
+      type: object
+      required:
+      - mode
+      title: SimulateRequest
+    ValidationError:
+      properties:
+        loc:
+          items:
+            anyOf:
+            - type: string
+            - type: integer
+          type: array
+          title: Location
+        msg:
+          type: string
+          title: Message
+        type:
+          type: string
+          title: Error Type
+        input:
+          title: Input
+        ctx:
+          type: object
+          title: Context
+      type: object
+      required:
+      - loc
+      - msg
+      - type
+      title: ValidationError
+    AskMeta:
+      properties:
+        path:
+          type: string
+          enum:
+          - sql
+          - rag
+          - abstain
+          title: Path
+        intent:
+          type: string
+          title: Intent
+        routed_to:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Routed To
+        abstained:
+          type: boolean
+          title: Abstained
+        route_request_id:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Route Request Id
+      type: object
+      required:
+      - path
+      - intent
+      - abstained
+      title: AskMeta
+    AskRequest:
+      properties:
+        question:
+          type: string
+          title: Question
+        user_id:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: User Id
+        conversation_id:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Conversation Id
+      type: object
+      required:
+      - question
+      title: AskRequest
+    AskResponse:
+      properties:
+        answer:
+          type: string
+          title: Answer
+        sources:
+          items:
+            $ref: '#/components/schemas/Source'
+          type: array
+          title: Sources
+        confidence:
+          type: number
+          title: Confidence
+        meta:
+          $ref: '#/components/schemas/AskMeta'
+      type: object
+      required:
+      - answer
+      - confidence
+      - meta
+      title: AskResponse
+    Source:
+      properties:
+        record_id:
+          type: string
+          title: Record Id
+        snippet:
+          type: string
+          title: Snippet
+      type: object
+      required:
+      - record_id
+      - snippet
+      title: Source

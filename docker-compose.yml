@@ -1,0 +1,90 @@
+# One-command startup: `docker compose up`. `.env` sets COMPOSE_PROFILES=router,qa so a bare
+# `up` brings up the full stack (constraint §1.4). Compose unions --profile flags with whatever
+# COMPOSE_PROFILES resolves to, so isolating a single-PS submission needs the env var itself
+# overridden, not just a --profile flag:
+#   PS1 only:  COMPOSE_PROFILES=router docker compose up
+#   PS7 only:  COMPOSE_PROFILES=qa docker compose up
+# See CLAUDE.md §1(4), §3.
+#
+# `inference` / `remote-tier` are M0/M1 placeholders (scripts/inference_stub_server.py) standing in
+# for the real llama.cpp + baked-GGUF-weights containers that M2 introduces. Until then the router
+# and qa services default to GATEWAY__USE_MOCK=true and don't depend on these being healthy.
+name: amypo-platform
+
+services:
+  inference:
+    build:
+      context: .
+      dockerfile: docker/inference_stub.Dockerfile
+    environment:
+      TIER_NAME: local
+      PORT: "8081"
+    ports:
+      - "8081:8081"
+    profiles: ["router", "qa"]
+    networks: [amypo]
+
+  remote-tier:
+    build:
+      context: .
+      dockerfile: docker/inference_stub.Dockerfile
+    environment:
+      TIER_NAME: remote
+      PORT: "8082"
+    ports:
+      - "8082:8082"
+    profiles: ["router", "qa"]
+    networks: [amypo]
+
+  router:
+    build:
+      context: .
+      dockerfile: docker/router.Dockerfile
+    environment:
+      GATEWAY__USE_MOCK: "true"
+      GATEWAY__LOCAL_URL: http://inference:8081
+      GATEWAY__REMOTE_URL: http://remote-tier:8082
+      DB__OPS_DB_PATH: /data/ops.db
+    volumes:
+      - ops-data:/data
+    ports:
+      - "8000:8000"
+    profiles: ["router", "qa"]
+    networks: [amypo]
+
+  qa:
+    build:
+      context: .
+      dockerfile: docker/qa.Dockerfile
+    environment:
+      DB__OPS_DB_PATH: /data/ops.db
+      DB__AMYPO_DB_PATH: /data-amypo/amypo.db
+      SERVICES__ROUTER_URL: http://router:8000
+    volumes:
+      - ops-data:/data
+      - amypo-data:/data-amypo
+    ports:
+      - "8001:8001"
+    profiles: ["qa"]
+    depends_on:
+      - router
+    networks: [amypo]
+
+  dashboard:
+    build:
+      context: .
+      dockerfile: docker/dashboard.Dockerfile
+    ports:
+      - "8501:8501"
+    profiles: ["router", "qa"]
+    depends_on:
+      - router
+    networks: [amypo]
+
+networks:
+  amypo:
+    driver: bridge
+
+volumes:
+  ops-data:
+  amypo-data:

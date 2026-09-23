@@ -1,0 +1,25 @@
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+build/
+dist/
+
+# runtime sqlite dbs (schemas are applied idempotently on startup, nothing to commit)
+data/*.db
+data/*.db-shm
+data/*.db-wal
+data/ops.db*
+data/amypo.db*
+
+# local model weights baked at Docker build time (M2) — never committed
+models/
+*.gguf
+
+.pytest_cache/
+.ruff_cache/
+*.log
+
+# editors
+.vscode/
+.idea/

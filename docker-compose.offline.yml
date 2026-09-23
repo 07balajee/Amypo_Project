@@ -1,0 +1,7 @@
+# Overlay that verifies the "fully offline at runtime" constraint (CLAUDE.md §1.2): the amypo
+# network gets no route out to the internet, while containers can still reach each other. Apply with
+#   docker compose -f docker-compose.yml -f docker-compose.offline.yml up
+# or `make offline-test`.
+networks:
+  amypo:
+    internal: true

@@ -1,0 +1,28 @@
+router:
+  thresholds: { local_min_ram_mb: 1500, local_max_cpu_pct: 90, local_max_queue: 4, remote_min_bw_kbps: 64 }
+  weights:    { cost: 1.0, latency: 0.15, quality: 5.0 }
+  quality:    { local: {low: 3, medium: 2, high: 1}, remote: {low: 3, medium: 3, high: 3} }
+  required:   { low: 1, medium: 2, high: 3 }
+  hysteresis: { margin_pct: 10, samples: 3 }
+  scarcity_k: 2.0
+  concurrency: { local: 2 }
+  quota_unit: requests
+cache: { semantic_threshold: 0.92, ttl_hours: 24, max_entries: 5000 }
+qa:
+  retrieval: { bm25_k: 20, vec_k: 20, rrf_k: 60, context_k: 4, context_max_tokens: 1400, rerank: false }
+  chunking:  { size_tokens: 350, overlap_tokens: 60 }
+  grounding: { support_cosine: 0.55, overlap_min: 0.6, abstain_below: 0.35 }
+placement: { weights: { skills: 40, cgpa: 25, coding: 20, projects: 15 } }
+simulator: { mode: scenario, scenario_file: data/synthetic/scenarios/steady.csv }
+gateway:
+  local_url: http://inference:8081
+  remote_url: http://remote-tier:8082
+  pricing_file: data/synthetic/pricing.yaml
+  use_mock: true
+data: { adapter: synthetic }
+services: { router_url: http://router:8000 }
+db:
+  ops_db_path: data/ops.db
+  amypo_db_path: data/amypo.db
+strict_contract: false
+version: "1.0.0"
