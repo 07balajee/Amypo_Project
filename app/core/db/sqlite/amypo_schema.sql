@@ -5,7 +5,8 @@ CREATE TABLE IF NOT EXISTS schema_version (
     id INTEGER PRIMARY KEY CHECK (id = 1),
     version INTEGER NOT NULL
 );
-INSERT OR IGNORE INTO schema_version (id, version) VALUES (1, 1);
+-- Fresh databases start at the latest version; older ones are upgraded by conn.py MIGRATIONS.
+INSERT OR IGNORE INTO schema_version (id, version) VALUES (1, 2);
 
 -- ---------- documents / chunks (RAG) ----------
 CREATE TABLE IF NOT EXISTS documents (
@@ -101,7 +102,8 @@ CREATE TABLE IF NOT EXISTS student_skills (
 CREATE TABLE IF NOT EXISTS companies (
     id   TEXT PRIMARY KEY,
     name TEXT NOT NULL,
-    role TEXT NOT NULL
+    role TEXT NOT NULL,
+    ctc_lpa REAL             -- offered CTC in lakhs per annum; >= 10 is a dream company
 );
 
 CREATE TABLE IF NOT EXISTS company_criteria (
@@ -109,7 +111,8 @@ CREATE TABLE IF NOT EXISTS company_criteria (
     min_cgpa       REAL NOT NULL,
     max_backlogs   INTEGER NOT NULL,
     min_attendance REAL NOT NULL,
-    required_skills_json TEXT NOT NULL  -- [{"skill_id": "...", "min_proficiency": N}, ...]
+    required_skills_json TEXT NOT NULL, -- [{"skill_id": "...", "min_proficiency": N}, ...]
+    eligible_depts_json TEXT             -- ["Computer Science and Engineering", ...]; NULL = all branches
 );
 
 CREATE TABLE IF NOT EXISTS module_skill_map (
@@ -117,4 +120,41 @@ CREATE TABLE IF NOT EXISTS module_skill_map (
     module   TEXT NOT NULL,
     weight   REAL NOT NULL,
     PRIMARY KEY (skill_id, module)
+);
+
+-- ---------- training / evaluation sets (loaded from the adapter's load_past_queries/benchmarks) ----------
+CREATE TABLE IF NOT EXISTS past_queries (
+    query_id   TEXT PRIMARY KEY,
+    cluster_id TEXT NOT NULL,        -- paraphrases of one question share a cluster
+    query      TEXT NOT NULL,
+    answer     TEXT NOT NULL,
+    record_id  TEXT NOT NULL         -- chunk the answer comes from (doc_id#c{n})
+);
+CREATE INDEX IF NOT EXISTS idx_past_queries_cluster ON past_queries (cluster_id);
+
+CREATE TABLE IF NOT EXISTS router_prompts (
+    id               TEXT PRIMARY KEY,
+    query            TEXT NOT NULL,
+    complexity_label TEXT NOT NULL,  -- low|medium|high (ground truth)
+    hint             TEXT,           -- sometimes wrong on purpose
+    category         TEXT NOT NULL,  -- definition|code|math|essay|...
+    repeat_of        TEXT            -- set for paraphrases of an earlier prompt
+);
+
+CREATE TABLE IF NOT EXISTS router_scenarios (
+    prompt_id     TEXT NOT NULL,
+    scenario      TEXT NOT NULL,
+    t_sec         INTEGER NOT NULL,
+    optimal_route TEXT NOT NULL,
+    PRIMARY KEY (prompt_id, scenario, t_sec)
+);
+
+CREATE TABLE IF NOT EXISTS qa_benchmark (
+    id                   TEXT PRIMARY KEY,
+    question             TEXT NOT NULL,
+    user_id              TEXT,
+    expected_answer      TEXT NOT NULL,
+    gold_record_ids_json TEXT NOT NULL,     -- JSON array of record_ids
+    type                 TEXT NOT NULL,     -- knowledge|record|eligibility|skill_gap|unanswerable
+    expect               TEXT NOT NULL      -- answer|abstain|refuse
 );

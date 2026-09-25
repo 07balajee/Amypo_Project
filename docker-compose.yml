@@ -1,17 +1,54 @@
-# One-command startup: `docker compose up`. `.env` sets COMPOSE_PROFILES=router,qa so a bare
+# One-command startup: `docker compose up`. `.env` sets COMPOSE_PROFILES=router,qa,mysql so a bare
 # `up` brings up the full stack (constraint §1.4). Compose unions --profile flags with whatever
 # COMPOSE_PROFILES resolves to, so isolating a single-PS submission needs the env var itself
 # overridden, not just a --profile flag:
-#   PS1 only:  COMPOSE_PROFILES=router docker compose up
-#   PS7 only:  COMPOSE_PROFILES=qa docker compose up
+#   PS1 only:  COMPOSE_PROFILES=router,mysql docker compose up
+#   PS7 only:  COMPOSE_PROFILES=qa,mysql docker compose up
 # See CLAUDE.md §1(4), §3.
+#
+# Database: MySQL. The bundled `mysql` service runs under the `mysql` profile (on by default via
+# .env). To use a MySQL server installed on the host instead, remove `mysql` from COMPOSE_PROFILES
+# and set DB_HOST=host.docker.internal (plus DB_USER / DB_PASSWORD) in .env.
 #
 # `inference` / `remote-tier` are M0/M1 placeholders (scripts/inference_stub_server.py) standing in
 # for the real llama.cpp + baked-GGUF-weights containers that M2 introduces. Until then the router
 # and qa services default to GATEWAY__USE_MOCK=true and don't depend on these being healthy.
 name: amypo-platform
 
+x-db-env: &db-env
+  DB__BACKEND: mysql
+  DB__MYSQL__HOST: ${DB_HOST:-mysql}
+  DB__MYSQL__PORT: "3306"
+  DB__MYSQL__USER: ${DB_USER:-amypo}
+  DB__MYSQL__PASSWORD: ${DB_PASSWORD:-amypo_local_dev}
+
 services:
+  mysql:
+    image: mysql:8.4
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-amypo_root_local_dev}
+      MYSQL_USER: ${DB_USER:-amypo}
+      MYSQL_PASSWORD: ${DB_PASSWORD:-amypo_local_dev}
+      MYSQL_DATABASE: amypo
+    # Keep MySQL small for the 8 GB budget: tiny buffer pool, no perf schema, no binlog.
+    command:
+      - --innodb-buffer-pool-size=64M
+      - --performance-schema=OFF
+      - --disable-log-bin
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./docker/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    ports:
+      - "3307:3306"   # 3307 on the host so it doesn't clash with a locally installed MySQL
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -u root -p$$MYSQL_ROOT_PASSWORD --silent"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+      start_period: 20s
+    profiles: ["mysql"]
+    networks: [amypo]
+
   inference:
     build:
       context: .
@@ -44,12 +81,17 @@ services:
       GATEWAY__USE_MOCK: "true"
       GATEWAY__LOCAL_URL: http://inference:8081
       GATEWAY__REMOTE_URL: http://remote-tier:8082
-      DB__OPS_DB_PATH: /data/ops.db
-    volumes:
-      - ops-data:/data
+      <<: *db-env
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     ports:
       - "8000:8000"
     profiles: ["router", "qa"]
+    depends_on:
+      mysql:
+        condition: service_healthy
+        required: false   # skipped when the mysql profile is off (host MySQL)
+    restart: on-failure
     networks: [amypo]
 
   qa:
@@ -57,17 +99,20 @@ services:
       context: .
       dockerfile: docker/qa.Dockerfile
     environment:
-      DB__OPS_DB_PATH: /data/ops.db
-      DB__AMYPO_DB_PATH: /data-amypo/amypo.db
+      <<: *db-env
       SERVICES__ROUTER_URL: http://router:8000
-    volumes:
-      - ops-data:/data
-      - amypo-data:/data-amypo
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     ports:
       - "8001:8001"
     profiles: ["qa"]
     depends_on:
-      - router
+      router:
+        condition: service_started
+      mysql:
+        condition: service_healthy
+        required: false
+    restart: on-failure
     networks: [amypo]
 
   dashboard:
@@ -86,5 +131,4 @@ networks:
     driver: bridge
 
 volumes:
-  ops-data:
-  amypo-data:
+  mysql-data:

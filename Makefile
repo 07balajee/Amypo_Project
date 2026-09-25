@@ -12,10 +12,10 @@ up:
 	docker compose up --build
 
 up-router:
-	COMPOSE_PROFILES=router docker compose up --build
+	COMPOSE_PROFILES=router,mysql docker compose up --build
 
 up-qa:
-	COMPOSE_PROFILES=qa docker compose up --build
+	COMPOSE_PROFILES=qa,mysql docker compose up --build
 
 down:
 	docker compose down
@@ -48,4 +48,4 @@ offline-test:
 
 clean:
 	docker compose down -v
-	rm -rf data/ops.db* data/amypo.db*
+	rm -rf $${DB__SQLITE__DIR:-$$HOME/.amypo/db}/ops.db* $${DB__SQLITE__DIR:-$$HOME/.amypo/db}/amypo.db*

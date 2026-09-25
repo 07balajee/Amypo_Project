@@ -8,9 +8,9 @@ from app.core.db import conn as conn_module
 
 @pytest.fixture()
 def isolated_settings(tmp_path, monkeypatch):
-    """Point ops/amypo DBs at a fresh tmp dir and force MockGateway, per test."""
-    monkeypatch.setenv("DB__OPS_DB_PATH", str(tmp_path / "ops.db"))
-    monkeypatch.setenv("DB__AMYPO_DB_PATH", str(tmp_path / "amypo.db"))
+    """Use the sqlite backend in a fresh tmp dir (no MySQL server needed) and force MockGateway."""
+    monkeypatch.setenv("DB__BACKEND", "sqlite")
+    monkeypatch.setenv("DB__SQLITE__DIR", str(tmp_path))
     monkeypatch.setenv("GATEWAY__USE_MOCK", "true")
     config_module.get_settings(reload=True)
     conn_module._initialized.clear()

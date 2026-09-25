@@ -1,0 +1,201 @@
+id,name,dept,year,cgpa,backlogs,coding_score,projects_count
+S2023CS001,Akash Kumar,Computer Science and Engineering,3,7.5,0,61.7,0
+S2023CS002,Sanjay Singh,Computer Science and Engineering,3,7.5,1,52.2,4
+S2023CS003,Rahul Nair,Computer Science and Engineering,3,8.1,0,75.0,3
+S2023CS004,Yamini Joseph,Computer Science and Engineering,3,7.9,0,62.4,3
+S2023CS005,Yamini Rao,Computer Science and Engineering,3,7.49,0,78.3,5
+S2023CS006,Ramya Varma,Computer Science and Engineering,3,8.4,0,75.0,6
+S2023CS007,Akash Sharma,Computer Science and Engineering,3,6.9,0,47.4,1
+S2023CS008,Meera Subramanian,Computer Science and Engineering,3,5.2,0,52.5,6
+S2023CS009,Madhan Sharma,Computer Science and Engineering,3,7.73,0,60.0,1
+S2023CS010,Divya Iyer,Computer Science and Engineering,3,6.57,0,54.8,2
+S2023CS011,Swathi Sharma,Computer Science and Engineering,3,7.95,2,82.8,5
+S2023CS012,Ramya Bose,Computer Science and Engineering,3,7.61,0,74.2,4
+S2023CS013,Vikram Rao,Computer Science and Engineering,3,7.14,0,95.4,2
+S2023CS014,Sahana Reddy,Computer Science and Engineering,3,6.59,0,51.0,1
+S2023CS015,Mary Joseph,Computer Science and Engineering,3,7.86,0,77.2,3
+S2023CS016,Rahul Kumar,Computer Science and Engineering,3,6.86,0,87.6,3
+S2023CS017,Akash Singh,Computer Science and Engineering,3,7.75,0,82.1,1
+S2023CS018,Rahul Khan,Computer Science and Engineering,3,5.85,1,81.9,1
+S2023CS019,Ramya Iyer,Computer Science and Engineering,3,6.92,0,27.2,6
+S2023CS020,Surya Kumar,Computer Science and Engineering,3,7.13,0,53.1,4
+S2023CS021,Vishnu Pillai,Computer Science and Engineering,3,9.03,0,43.7,4
+S2023CS022,Priya Nair,Computer Science and Engineering,3,8.46,0,72.5,4
+S2023CS023,Vishnu Das,Computer Science and Engineering,3,8.22,0,83.0,3
+S2023CS024,Janani Raman,Computer Science and Engineering,3,6.62,0,72.8,3
+S2023CS025,Karthik Thomas,Computer Science and Engineering,3,8.16,0,66.4,3
+S2023CS026,Harini Varma,Computer Science and Engineering,3,8.78,1,48.8,6
+S2023CS027,Zara Raman,Computer Science and Engineering,3,6.49,0,46.9,3
+S2023CS028,Arjun Thomas,Computer Science and Engineering,3,7.84,0,64.3,2
+S2023CS029,Vishnu Rao,Computer Science and Engineering,3,6.53,0,36.9,5
+S2023CS030,Akash Thomas,Computer Science and Engineering,3,6.98,0,58.6,4
+S2023CS031,Divya Nair,Computer Science and Engineering,3,7.44,1,71.3,3
+S2023CS032,Rahul Reddy,Computer Science and Engineering,3,6.03,0,40.4,2
+S2023CS033,Sneha Joseph,Computer Science and Engineering,3,6.86,0,52.1,4
+S2023CS034,Ramya Menon,Computer Science and Engineering,3,7.9,0,55.4,2
+S2023CS035,Vishnu Reddy,Computer Science and Engineering,3,6.2,0,97.9,5
+S2023CS036,Mary Singh,Computer Science and Engineering,3,6.91,0,48.9,1
+S2023CS037,Janani Joseph,Computer Science and Engineering,3,5.95,0,53.6,3
+S2023CS038,Fathima Raman,Computer Science and Engineering,3,7.05,0,45.3,1
+S2023CS039,Swathi Khan,Computer Science and Engineering,3,7.08,0,67.6,5
+S2023CS040,Karthik Sharma,Computer Science and Engineering,3,7.95,0,53.9,3
+S2023CS041,Karthik Khan,Computer Science and Engineering,3,7.55,0,40.5,6
+S2023CS042,Akash Das,Computer Science and Engineering,3,7.45,2,32.2,1
+S2023CS043,Keerthana Ali,Computer Science and Engineering,3,8.26,0,72.5,2
+S2023CS044,Gokul Varma,Computer Science and Engineering,3,7.68,0,86.4,5
+S2023CS045,Janani Raman,Computer Science and Engineering,3,6.69,0,65.9,3
+S2023CS046,Lakshmi Rao,Computer Science and Engineering,3,5.75,0,51.2,1
+S2023CS047,Ishaan Thomas,Computer Science and Engineering,3,6.57,0,57.7,0
+S2023CS048,Deepak Reddy,Computer Science and Engineering,3,7.72,0,44.1,0
+S2023CS049,Rohan Subramanian,Computer Science and Engineering,3,7.53,0,59.2,6
+S2023CS050,Yamini Joseph,Computer Science and Engineering,3,8.05,0,54.9,0
+S2023CS051,Varsha Rao,Computer Science and Engineering,3,6.79,0,71.3,4
+S2023CS052,Surya Varma,Computer Science and Engineering,3,7.6,0,53.1,4
+S2023CS053,Naveen Kumar,Computer Science and Engineering,3,8.01,0,83.3,6
+S2023CS054,Karthik Pillai,Computer Science and Engineering,3,7.26,2,65.4,0
+S2023CS055,Nisha Thomas,Computer Science and Engineering,3,6.78,0,35.8,3
+S2023CS056,Sahana Menon,Computer Science and Engineering,3,7.94,0,28.3,6
+S2023CS057,Ishaan Ali,Computer Science and Engineering,3,7.05,0,61.1,5
+S2023CS058,Bhavya Nair,Computer Science and Engineering,3,7.35,0,74.4,0
+S2023CS059,Naveen Sharma,Computer Science and Engineering,3,8.1,0,33.7,1
+S2023CS060,Aditi Nair,Computer Science and Engineering,3,8.58,0,82.4,5
+S2022CS001,Swathi Menon,Computer Science and Engineering,4,6.65,1,91.7,4
+S2022CS002,John Bose,Computer Science and Engineering,4,7.68,0,72.2,1
+S2022CS003,Divya Iyer,Computer Science and Engineering,4,7.74,0,58.2,6
+S2022CS004,Madhan Sharma,Computer Science and Engineering,4,8.59,0,37.2,0
+S2022CS005,Varsha Thomas,Computer Science and Engineering,4,8.44,0,64.5,3
+S2022CS006,Madhan Kumar,Computer Science and Engineering,4,7.41,1,59.9,0
+S2022CS007,Arjun Menon,Computer Science and Engineering,4,5.98,1,75.7,4
+S2022CS008,Arjun Iyer,Computer Science and Engineering,4,7.52,0,71.5,5
+S2022CS009,Vikram Krishnan,Computer Science and Engineering,4,7.51,0,65.3,6
+S2022CS010,Pradeep Bose,Computer Science and Engineering,4,7.07,0,43.8,5
+S2022CS011,John Thomas,Computer Science and Engineering,4,6.26,0,68.9,0
+S2022CS012,Varsha Iyer,Computer Science and Engineering,4,7.75,0,64.5,1
+S2022CS013,Rahul Joseph,Computer Science and Engineering,4,7.22,3,42.7,1
+S2022CS014,Surya Rao,Computer Science and Engineering,4,7.01,2,62.5,0
+S2022CS015,Sneha Krishnan,Computer Science and Engineering,4,7.97,0,62.9,3
+S2022CS016,Karthik Raman,Computer Science and Engineering,4,7.33,0,48.5,5
+S2022CS017,Gokul Thomas,Computer Science and Engineering,4,7.68,0,68.2,1
+S2022CS018,Surya Bose,Computer Science and Engineering,4,6.96,0,58.2,6
+S2022CS019,Vishnu Iyer,Computer Science and Engineering,4,6.88,0,82.6,3
+S2022CS020,Sanjay Thomas,Computer Science and Engineering,4,7.91,0,30.5,5
+S2022CS021,Akash Singh,Computer Science and Engineering,4,6.28,0,66.8,2
+S2022CS022,Ananya Joseph,Computer Science and Engineering,4,7.93,0,46.8,4
+S2022CS023,Janani Reddy,Computer Science and Engineering,4,5.97,0,53.3,1
+S2022CS024,Surya Sharma,Computer Science and Engineering,4,7.26,0,66.8,2
+S2022CS025,Varsha Ali,Computer Science and Engineering,4,7.58,0,70.7,0
+S2022CS026,Divya Reddy,Computer Science and Engineering,4,7.71,0,73.6,3
+S2022CS027,Mary Reddy,Computer Science and Engineering,4,8.42,0,67.4,1
+S2022CS028,Zara Reddy,Computer Science and Engineering,4,5.2,0,62.9,1
+S2022CS029,Nisha Subramanian,Computer Science and Engineering,4,7.56,0,52.9,5
+S2022CS030,Surya Subramanian,Computer Science and Engineering,4,7.51,1,70.4,5
+S2022CS031,Meera Patel,Computer Science and Engineering,4,7.01,0,43.0,5
+S2022CS032,Arjun Iyer,Computer Science and Engineering,4,7.68,0,48.5,5
+S2022CS033,Pradeep Das,Computer Science and Engineering,4,8.25,0,59.7,4
+S2022CS034,Yamini Menon,Computer Science and Engineering,4,8.61,0,60.7,6
+S2022CS035,Yamini Krishnan,Computer Science and Engineering,4,8.78,0,62.5,3
+S2022CS036,Kavya Rao,Computer Science and Engineering,4,5.58,0,85.2,3
+S2022CS037,Rahul Subramanian,Computer Science and Engineering,4,6.8,0,81.1,5
+S2022CS038,Pradeep Reddy,Computer Science and Engineering,4,6.56,0,61.6,1
+S2022CS039,Varsha Nair,Computer Science and Engineering,4,6.43,0,71.5,4
+S2022CS040,John Menon,Computer Science and Engineering,4,8.22,0,57.5,6
+S2023IT001,Aarav Patel,Information Technology,3,7.19,0,50.0,3
+S2023IT002,Mary Reddy,Information Technology,3,6.54,1,93.2,4
+S2023IT003,Aarav Nair,Information Technology,3,5.57,0,55.9,3
+S2023IT004,Lakshmi Joseph,Information Technology,3,6.22,0,73.0,4
+S2023IT005,Yamini Bose,Information Technology,3,7.45,0,73.3,0
+S2023IT006,Swathi Varma,Information Technology,3,6.94,0,57.1,3
+S2023IT007,Janani Bose,Information Technology,3,8.52,0,34.3,3
+S2023IT008,Sahana Raman,Information Technology,3,7.26,0,71.6,1
+S2023IT009,Arjun Thomas,Information Technology,3,6.39,0,53.6,4
+S2023IT010,Surya Sharma,Information Technology,3,6.01,0,44.7,4
+S2023IT011,Aarav Varma,Information Technology,3,8.25,2,62.3,6
+S2023IT012,Rohan Bose,Information Technology,3,8.01,1,75.8,6
+S2023IT013,Fathima Patel,Information Technology,3,7.58,0,93.1,3
+S2023IT014,Nisha Patel,Information Technology,3,6.38,0,59.3,2
+S2023IT015,Sanjay Reddy,Information Technology,3,7.01,0,56.7,1
+S2023IT016,Vishnu Rao,Information Technology,3,6.67,0,83.4,5
+S2023IT017,Fathima Ali,Information Technology,3,7.01,0,100,6
+S2023IT018,Aarav Subramanian,Information Technology,3,9.49,0,68.2,1
+S2023IT019,Rahul Varma,Information Technology,3,7.56,0,68.1,1
+S2023IT020,Zara Nair,Information Technology,3,7.72,0,69.5,5
+S2023IT021,Bhavya Joseph,Information Technology,3,7.69,1,60.6,1
+S2023IT022,Sneha Joseph,Information Technology,3,7.49,0,71.1,3
+S2023IT023,Zara Singh,Information Technology,3,6.86,1,49.4,3
+S2023IT024,Nisha Singh,Information Technology,3,6.62,0,57.7,2
+S2023IT025,Vikram Singh,Information Technology,3,8.22,0,63.6,4
+S2023IT026,Swathi Krishnan,Information Technology,3,7.54,0,52.6,3
+S2023IT027,Pradeep Bose,Information Technology,3,7.86,0,46.2,3
+S2023IT028,Surya Rao,Information Technology,3,8.08,0,84.1,1
+S2023IT029,Naveen Thomas,Information Technology,3,7.71,0,74.8,5
+S2023IT030,Ananya Ali,Information Technology,3,7.1,0,70.4,6
+S2023IT031,Meera Rao,Information Technology,3,7.55,0,34.4,2
+S2023IT032,Sahana Subramanian,Information Technology,3,5.78,0,29.2,6
+S2023IT033,Aditi Rao,Information Technology,3,6.8,0,39.5,3
+S2023IT034,Nisha Pillai,Information Technology,3,7.93,0,59.8,5
+S2023IT035,Zara Iyer,Information Technology,3,7.25,0,48.7,3
+S2023IT036,Aarav Kumar,Information Technology,3,6.3,2,72.5,0
+S2023IT037,Rohan Menon,Information Technology,3,6.73,1,80.1,1
+S2023IT038,Lakshmi Bose,Information Technology,3,6.3,1,26.7,1
+S2023IT039,Arjun Iyer,Information Technology,3,6.5,0,69.7,2
+S2023IT040,John Ali,Information Technology,3,7.85,1,49.5,4
+S2022IT001,Mary Subramanian,Information Technology,4,6.16,1,59.9,3
+S2022IT002,Lakshmi Menon,Information Technology,4,7.27,0,68.1,6
+S2022IT003,Zara Nair,Information Technology,4,6.84,1,75.9,0
+S2022IT004,Vishnu Raman,Information Technology,4,8.1,0,59.8,4
+S2022IT005,Meera Subramanian,Information Technology,4,7.39,1,62.7,1
+S2022IT006,Nisha Nair,Information Technology,4,7.66,1,49.4,2
+S2022IT007,Priya Krishnan,Information Technology,4,6.93,1,67.3,5
+S2022IT008,Lakshmi Thomas,Information Technology,4,8.75,0,80.3,0
+S2022IT009,Fathima Varma,Information Technology,4,7.36,1,45.2,1
+S2022IT010,Abdul Nair,Information Technology,4,7.9,0,64.5,4
+S2022IT011,Varsha Singh,Information Technology,4,8.39,0,43.6,0
+S2022IT012,Fathima Sharma,Information Technology,4,7.65,2,65.4,2
+S2022IT013,Karthik Rao,Information Technology,4,7.3,0,62.2,3
+S2022IT014,Pradeep Khan,Information Technology,4,8.53,0,62.0,5
+S2022IT015,Meera Varma,Information Technology,4,7.29,0,71.3,0
+S2022IT016,Tarun Varma,Information Technology,4,7.83,0,64.8,3
+S2022IT017,Tarun Nair,Information Technology,4,7.33,2,47.6,5
+S2022IT018,Deepak Nair,Information Technology,4,7.39,2,45.8,1
+S2022IT019,Aditi Kumar,Information Technology,4,7.87,1,56.4,1
+S2022IT020,Janani Ali,Information Technology,4,7.79,0,79.5,5
+S2023AD001,Zara Singh,Artificial Intelligence and Data Science,3,8.6,0,75.0,3
+S2023AD002,Ramya Rao,Artificial Intelligence and Data Science,3,7.75,0,63.6,6
+S2023AD003,Madhan Subramanian,Artificial Intelligence and Data Science,3,8.76,0,71.2,0
+S2023AD004,Ramya Raman,Artificial Intelligence and Data Science,3,6.48,0,38.6,2
+S2023AD005,Yamini Kumar,Artificial Intelligence and Data Science,3,6.59,1,51.4,1
+S2023AD006,Aditi Khan,Artificial Intelligence and Data Science,3,6.82,0,56.2,3
+S2023AD007,Rohan Thomas,Artificial Intelligence and Data Science,3,6.91,0,65.8,5
+S2023AD008,Karthik Ali,Artificial Intelligence and Data Science,3,6.57,0,31.6,5
+S2023AD009,Madhan Patel,Artificial Intelligence and Data Science,3,6.54,0,72.6,3
+S2023AD010,Arjun Krishnan,Artificial Intelligence and Data Science,3,6.43,0,66.0,6
+S2023AD011,Karthik Iyer,Artificial Intelligence and Data Science,3,6.57,0,32.5,2
+S2023AD012,Fathima Das,Artificial Intelligence and Data Science,3,6.53,0,68.7,6
+S2023AD013,Naveen Khan,Artificial Intelligence and Data Science,3,6.87,0,80.0,5
+S2023AD014,Keerthana Reddy,Artificial Intelligence and Data Science,3,8.07,0,73.9,5
+S2023AD015,Sanjay Khan,Artificial Intelligence and Data Science,3,8.89,0,86.3,2
+S2023AD016,Tarun Khan,Artificial Intelligence and Data Science,3,7.06,0,34.7,6
+S2023AD017,Sanjay Sharma,Artificial Intelligence and Data Science,3,6.15,0,55.0,1
+S2023AD018,Ananya Rao,Artificial Intelligence and Data Science,3,8.63,0,64.2,1
+S2023AD019,Aarav Reddy,Artificial Intelligence and Data Science,3,6.15,0,61.8,4
+S2023AD020,Keerthana Sharma,Artificial Intelligence and Data Science,3,6.31,0,76.3,0
+S2023AD021,Arjun Menon,Artificial Intelligence and Data Science,3,8.4,0,76.6,4
+S2023AD022,Nisha Nair,Artificial Intelligence and Data Science,3,7.87,0,88.0,4
+S2023AD023,Vishnu Iyer,Artificial Intelligence and Data Science,3,7.16,0,51.5,2
+S2023AD024,Naveen Ali,Artificial Intelligence and Data Science,3,8.8,1,44.9,4
+S2023AD025,Mary Menon,Artificial Intelligence and Data Science,3,7.95,0,21.5,6
+S2023AD026,Meera Thomas,Artificial Intelligence and Data Science,3,7.93,1,53.5,4
+S2023AD027,Sahana Patel,Artificial Intelligence and Data Science,3,8.68,0,68.1,2
+S2023AD028,Sneha Ali,Artificial Intelligence and Data Science,3,6.33,0,66.6,3
+S2023AD029,Vishnu Iyer,Artificial Intelligence and Data Science,3,6.6,0,62.5,0
+S2023AD030,Gokul Iyer,Artificial Intelligence and Data Science,3,6.38,0,40.3,0
+S2023AD031,Bhavya Bose,Artificial Intelligence and Data Science,3,8.06,0,52.1,1
+S2023AD032,Divya Iyer,Artificial Intelligence and Data Science,3,7.11,0,42.7,4
+S2023AD033,Deepak Nair,Artificial Intelligence and Data Science,3,6.9,1,49.9,6
+S2023AD034,Yamini Khan,Artificial Intelligence and Data Science,3,7.32,0,63.0,4
+S2023AD035,Fathima Singh,Artificial Intelligence and Data Science,3,8.11,0,50.4,0
+S2023AD036,Varsha Thomas,Artificial Intelligence and Data Science,3,8.22,0,99.8,2
+S2023AD037,Yamini Khan,Artificial Intelligence and Data Science,3,9.75,0,40.9,1
+S2023AD038,Madhan Rao,Artificial Intelligence and Data Science,3,7.07,0,59.0,4
+S2023AD039,Swathi Raman,Artificial Intelligence and Data Science,3,7.23,0,51.9,0
+S2023AD040,Vikram Varma,Artificial Intelligence and Data Science,3,7.02,0,50.1,3

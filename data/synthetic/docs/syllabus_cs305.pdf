@@ -1,0 +1,98 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Length 2825 >>
+stream
+BT 14 TL 56 736 Td
+/F2 12 Tf (CS305 Machine Learning - Syllabus) Tj T*
+/F1 10 Tf (SYNTHETIC DATA: generated for development and testing, not an official AMYPO document.) Tj T*
+/F1 10 Tf () Tj T*
+/F2 12 Tf (Course Information) Tj T*
+/F1 10 Tf (- Course code: CS305) Tj T*
+/F1 10 Tf (- Credits: 3) Tj T*
+/F1 10 Tf (- Semester: 2025-26 EVEN) Tj T*
+/F1 10 Tf (- Prerequisites: MA201 Probability and Statistics) Tj T*
+/F1 10 Tf () Tj T*
+/F2 12 Tf (Course Objectives) Tj T*
+/F1 10 Tf (- Understand supervised and unsupervised learning algorithms.) Tj T*
+/F1 10 Tf (- Evaluate models using appropriate metrics and validation strategies.) Tj T*
+/F1 10 Tf (- Apply machine learning libraries to real datasets.) Tj T*
+/F1 10 Tf () Tj T*
+/F2 12 Tf (Unit 1: Foundations) Tj T*
+/F1 10 Tf (Unit 1 of CS305 covers types of learning, bias-variance trade-off, train, validation and) Tj T*
+/F1 10 Tf (test splits, feature scaling and overfitting and regularization.) Tj T*
+/F1 10 Tf () Tj T*
+/F2 12 Tf (Unit 2: Regression and Classification) Tj T*
+/F1 10 Tf (Unit 2 of CS305 covers linear regression, logistic regression, k-nearest neighbours, naive) Tj T*
+/F1 10 Tf (Bayes and support vector machines.) Tj T*
+/F1 10 Tf () Tj T*
+/F2 12 Tf (Unit 3: Trees and Ensembles) Tj T*
+/F1 10 Tf (Unit 3 of CS305 covers decision trees, information gain and Gini index, random forests,) Tj T*
+/F1 10 Tf (gradient boosting and feature importance.) Tj T*
+/F1 10 Tf () Tj T*
+/F2 12 Tf (Unit 4: Unsupervised Learning) Tj T*
+/F1 10 Tf (Unit 4 of CS305 covers k-means clustering, hierarchical clustering, DBSCAN, principal) Tj T*
+/F1 10 Tf (component analysis and anomaly detection.) Tj T*
+/F1 10 Tf () Tj T*
+/F2 12 Tf (Unit 5: Neural Networks and Evaluation) Tj T*
+/F1 10 Tf (Unit 5 of CS305 covers perceptron and backpropagation, activation functions, precision,) Tj T*
+/F1 10 Tf (recall and F1 score, ROC and AUC and cross-validation.) Tj T*
+/F1 10 Tf () Tj T*
+/F2 12 Tf (Course Outcomes) Tj T*
+/F1 10 Tf (- CO1: Choose a suitable learning algorithm for a problem.) Tj T*
+/F1 10 Tf (- CO2: Train and tune regression models.) Tj T*
+/F1 10 Tf (- CO3: Build ensemble classifiers.) Tj T*
+/F1 10 Tf (- CO4: Apply clustering and dimensionality reduction.) Tj T*
+/F1 10 Tf (- CO5: Evaluate models with precision, recall and ROC curves.) Tj T*
+/F1 10 Tf () Tj T*
+/F2 12 Tf (Assessment) Tj T*
+/F1 10 Tf (CS305 is assessed out of 100 marks: 40 internal marks and 60 external marks. Internal marks) Tj T*
+/F1 10 Tf (consist of two Continuous Assessment Tests \(CAT 1 and CAT 2\) of 15 marks each and) Tj T*
+/F1 10 Tf (assignments worth 10 marks. The end-semester examination is conducted for 100 marks and) Tj T*
+/F1 10 Tf (scaled to 60. Lab work carries 20 of the 40 internal marks, and the CAT weight is halved.) Tj T*
+/F1 10 Tf () Tj T*
+/F2 12 Tf (Textbook) Tj T*
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 112 >>
+stream
+BT 14 TL 56 736 Td
+/F1 10 Tf (Aurelien Geron, Hands-On Machine Learning with Scikit-Learn and PyTorch.) Tj T*
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000218 00000 n 
+0000000320 00000 n 
+0000003197 00000 n 
+0000003333 00000 n 
+0000003496 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+3632
+%%EOF

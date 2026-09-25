@@ -19,10 +19,22 @@ gateway:
   remote_url: http://remote-tier:8082
   pricing_file: data/synthetic/pricing.yaml
   use_mock: true
-data: { adapter: synthetic }
+data: { adapter: synthetic, synthetic_dir: data/synthetic }   # adapter: synthetic | amypo
 services: { router_url: http://router:8000 }
 db:
-  ops_db_path: data/ops.db
-  amypo_db_path: data/amypo.db
+  backend: mysql              # mysql (services) | sqlite (test suite; no server needed)
+  mysql:
+    url: ""                   # or a connection string via DB__MYSQL__URL / `ingest --db-url`
+    host: localhost           # compose sets DB__MYSQL__HOST (mysql container or host.docker.internal)
+    port: 3306
+    user: amypo
+    password: ""              # set DB__MYSQL__PASSWORD in the environment; never commit it here
+    ops_database: amypo_ops
+    amypo_database: amypo
+    connect_timeout_s: 5
+  sqlite:
+    dir: ~/.amypo/db          # relative paths below resolve against this
+    ops_db_path: ops.db
+    amypo_db_path: amypo.db
 strict_contract: false
 version: "1.0.0"

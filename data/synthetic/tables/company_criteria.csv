@@ -1,0 +1,11 @@
+company_id,min_cgpa,max_backlogs,min_attendance,required_skills_json,eligible_depts_json
+zoho_sde,7.5,0,75.0,"[{""skill_id"":""sk_dsa"",""min_proficiency"":3},{""skill_id"":""sk_java"",""min_proficiency"":3},{""skill_id"":""sk_sql"",""min_proficiency"":2}]","[""Computer Science and Engineering"", ""Information Technology""]"
+tcs_digital,6.5,1,75.0,"[{""skill_id"":""sk_dsa"",""min_proficiency"":2},{""skill_id"":""sk_python"",""min_proficiency"":2},{""skill_id"":""sk_sql"",""min_proficiency"":2}]",
+infosys_da,6.0,1,75.0,"[{""skill_id"":""sk_sql"",""min_proficiency"":3},{""skill_id"":""sk_excel"",""min_proficiency"":3},{""skill_id"":""sk_statistics"",""min_proficiency"":2},{""skill_id"":""sk_power_bi"",""min_proficiency"":2}]",
+wipro_pe,6.0,2,70.0,"[{""skill_id"":""sk_c"",""min_proficiency"":2},{""skill_id"":""sk_oop"",""min_proficiency"":2},{""skill_id"":""sk_aptitude"",""min_proficiency"":2}]",
+freshworks_fe,7.0,0,75.0,"[{""skill_id"":""sk_html_css"",""min_proficiency"":3},{""skill_id"":""sk_javascript"",""min_proficiency"":3},{""skill_id"":""sk_react"",""min_proficiency"":3}]","[""Computer Science and Engineering"", ""Information Technology""]"
+accenture_ase,6.5,1,75.0,"[{""skill_id"":""sk_python"",""min_proficiency"":2},{""skill_id"":""sk_oop"",""min_proficiency"":2},{""skill_id"":""sk_communication"",""min_proficiency"":3}]",
+cognizant_genc,6.5,0,75.0,"[{""skill_id"":""sk_java"",""min_proficiency"":2},{""skill_id"":""sk_sql"",""min_proficiency"":2},{""skill_id"":""sk_dsa"",""min_proficiency"":2}]",
+hcl_cloud,6.5,1,75.0,"[{""skill_id"":""sk_linux"",""min_proficiency"":3},{""skill_id"":""sk_aws"",""min_proficiency"":2},{""skill_id"":""sk_docker"",""min_proficiency"":2}]",
+musigma_ds,7.0,0,80.0,"[{""skill_id"":""sk_statistics"",""min_proficiency"":3},{""skill_id"":""sk_python"",""min_proficiency"":3},{""skill_id"":""sk_ml"",""min_proficiency"":2}]","[""Computer Science and Engineering"", ""Artificial Intelligence and Data Science""]"
+amazon_sde,8.0,0,75.0,"[{""skill_id"":""sk_dsa"",""min_proficiency"":4},{""skill_id"":""sk_system_design"",""min_proficiency"":3},{""skill_id"":""sk_java"",""min_proficiency"":3}]",

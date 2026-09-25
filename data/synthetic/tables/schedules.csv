@@ -1,0 +1,38 @@
+course_code,session_type,day_or_date,start_time,end_time,room
+CS301,lecture,Monday,09:00,09:50,LH-101
+CS301,lecture,Wednesday,10:00,10:50,LH-101
+CS301,lecture,Friday,11:10,12:00,LH-101
+CS301,lab,Tuesday,13:30,16:10,LAB-1
+CS301,exam,2025-11-24,09:30,12:30,Exam Hall A
+CS302,lecture,Tuesday,10:00,10:50,LH-102
+CS302,lecture,Thursday,11:10,12:00,LH-102
+CS302,lecture,Monday,13:30,14:20,LH-102
+CS302,exam,2025-11-26,09:30,12:30,Exam Hall A
+CS303,lecture,Wednesday,11:10,12:00,LH-103
+CS303,lecture,Friday,13:30,14:20,LH-103
+CS303,lecture,Tuesday,14:30,15:20,LH-103
+CS303,exam,2025-11-28,09:30,12:30,Exam Hall A
+CS304,lecture,Thursday,13:30,14:20,LH-104
+CS304,lecture,Monday,14:30,15:20,LH-104
+CS304,lecture,Wednesday,09:00,09:50,LH-104
+CS304,exam,2025-12-01,09:30,12:30,Exam Hall A
+CS305,lecture,Friday,14:30,15:20,LH-105
+CS305,lecture,Tuesday,09:00,09:50,LH-105
+CS305,lecture,Thursday,10:00,10:50,LH-105
+CS305,lab,Monday,13:30,16:10,LAB-1
+CS305,exam,2026-04-20,09:30,12:30,Exam Hall A
+CS306,lecture,Monday,09:00,09:50,LH-106
+CS306,lecture,Wednesday,10:00,10:50,LH-106
+CS306,lecture,Friday,11:10,12:00,LH-106
+CS306,lab,Tuesday,13:30,16:10,LAB-2
+CS306,exam,2026-04-22,09:30,12:30,Exam Hall A
+CS307,lecture,Tuesday,10:00,10:50,LH-107
+CS307,lecture,Thursday,11:10,12:00,LH-107
+CS307,lecture,Monday,13:30,14:20,LH-107
+CS307,lab,Wednesday,13:30,16:10,LAB-3
+CS307,exam,2026-04-24,09:30,12:30,Exam Hall A
+CS308,lecture,Wednesday,11:10,12:00,LH-108
+CS308,lecture,Friday,13:30,14:20,LH-108
+CS308,lecture,Tuesday,14:30,15:20,LH-108
+CS308,lab,Thursday,13:30,16:10,LAB-4
+CS308,exam,2026-04-27,09:30,12:30,Exam Hall A

@@ -1,0 +1,291 @@
+query_id,cluster_id,query,answer,record_id
+pq-0001,faq-01,How much is the tuition fee per semester?,"The tuition fee for B.E./B.Tech programmes is Rs. 65,000 per semester.",faq#c1
+pq-0002,faq-01,How much is the tuition fee per semester? Please explain.,"The tuition fee for B.E./B.Tech programmes is Rs. 65,000 per semester.",faq#c1
+pq-0003,faq-01,how much is the tuition fee per semester,"The tuition fee for B.E./B.Tech programmes is Rs. 65,000 per semester.",faq#c1
+pq-0004,faq-01,How much is the tuition fee per semester at AMYPO?,"The tuition fee for B.E./B.Tech programmes is Rs. 65,000 per semester.",faq#c1
+pq-0005,faq-01,I want to know: how much is the tuition fee per semester?,"The tuition fee for B.E./B.Tech programmes is Rs. 65,000 per semester.",faq#c1
+pq-0006,faq-02,When is the semester fee due?,Fees for the odd semester are due by July 15 and fees for the even semester are due by December 15.,faq#c2
+pq-0007,faq-02,When is the semester fee due at AMYPO?,Fees for the odd semester are due by July 15 and fees for the even semester are due by December 15.,faq#c2
+pq-0008,faq-02,Can you tell me when is the semester fee due?,Fees for the odd semester are due by July 15 and fees for the even semester are due by December 15.,faq#c2
+pq-0009,faq-02,"pls help, when is the semester fee due?",Fees for the odd semester are due by July 15 and fees for the even semester are due by December 15.,faq#c2
+pq-0010,faq-02,quick question - When is the semester fee due?,Fees for the odd semester are due by July 15 and fees for the even semester are due by December 15.,faq#c2
+pq-0011,faq-03,Is there a late fee for paying after the due date?,"A late fee of Rs. 100 per day is charged after the due date, up to a maximum of Rs. 2,000.",faq#c3
+pq-0012,faq-03,quick question - Is there a late fee for paying after the due date?,"A late fee of Rs. 100 per day is charged after the due date, up to a maximum of Rs. 2,000.",faq#c3
+pq-0013,faq-03,Is there a late fee for paying after the due date? Please explain.,"A late fee of Rs. 100 per day is charged after the due date, up to a maximum of Rs. 2,000.",faq#c3
+pq-0014,faq-03,I want to know: is there a late fee for paying after the due date?,"A late fee of Rs. 100 per day is charged after the due date, up to a maximum of Rs. 2,000.",faq#c3
+pq-0015,faq-03,Is there a late fee for paying after the due date at AMYPO?,"A late fee of Rs. 100 per day is charged after the due date, up to a maximum of Rs. 2,000.",faq#c3
+pq-0016,faq-04,How can I pay my fees?,"Fees can be paid on the student portal through UPI, net banking or debit card, or by demand draft at the accounts office.",faq#c4
+pq-0017,faq-04,I want to know: how can I pay my fees?,"Fees can be paid on the student portal through UPI, net banking or debit card, or by demand draft at the accounts office.",faq#c4
+pq-0018,faq-04,How can I pay my fees? Please explain.,"Fees can be paid on the student portal through UPI, net banking or debit card, or by demand draft at the accounts office.",faq#c4
+pq-0019,faq-04,"pls help, how can i pay my fees?","Fees can be paid on the student portal through UPI, net banking or debit card, or by demand draft at the accounts office.",faq#c4
+pq-0020,faq-04,quick question - How can I pay my fees?,"Fees can be paid on the student portal through UPI, net banking or debit card, or by demand draft at the accounts office.",faq#c4
+pq-0021,faq-05,Where can I download my fee receipt?,Fee receipts can be downloaded from the student portal under Fees > Receipts.,faq#c5
+pq-0022,faq-05,I want to know: where can I download my fee receipt?,Fee receipts can be downloaded from the student portal under Fees > Receipts.,faq#c5
+pq-0023,faq-05,Can you tell me where can I download my fee receipt?,Fee receipts can be downloaded from the student portal under Fees > Receipts.,faq#c5
+pq-0024,faq-05,quick question - Where can I download my fee receipt?,Fee receipts can be downloaded from the student portal under Fees > Receipts.,faq#c5
+pq-0025,faq-05,"pls help, where can i download my fee receipt?",Fee receipts can be downloaded from the student portal under Fees > Receipts.,faq#c5
+pq-0026,faq-06,Is there a merit scholarship?,Students with a CGPA of 9.0 or above receive a merit scholarship of 25% of the tuition fee for the next semester.,faq#c6
+pq-0027,faq-06,is there a merit scholarship,Students with a CGPA of 9.0 or above receive a merit scholarship of 25% of the tuition fee for the next semester.,faq#c6
+pq-0028,faq-06,"pls help, is there a merit scholarship?",Students with a CGPA of 9.0 or above receive a merit scholarship of 25% of the tuition fee for the next semester.,faq#c6
+pq-0029,faq-06,Is there a merit scholarship at AMYPO?,Students with a CGPA of 9.0 or above receive a merit scholarship of 25% of the tuition fee for the next semester.,faq#c6
+pq-0030,faq-06,Is there a merit scholarship? Please explain.,Students with a CGPA of 9.0 or above receive a merit scholarship of 25% of the tuition fee for the next semester.,faq#c6
+pq-0031,faq-07,Can I get a refund if I withdraw from the programme?,Students who withdraw before classes begin get a 90% refund of the tuition fee. No refund is given after the first week of classes.,faq#c7
+pq-0032,faq-07,Can I get a refund if I withdraw from the programme? Please explain.,Students who withdraw before classes begin get a 90% refund of the tuition fee. No refund is given after the first week of classes.,faq#c7
+pq-0033,faq-07,quick question - Can I get a refund if I withdraw from the programme?,Students who withdraw before classes begin get a 90% refund of the tuition fee. No refund is given after the first week of classes.,faq#c7
+pq-0034,faq-07,"pls help, can i get a refund if i withdraw from the programme?",Students who withdraw before classes begin get a 90% refund of the tuition fee. No refund is given after the first week of classes.,faq#c7
+pq-0035,faq-07,I want to know: can I get a refund if I withdraw from the programme?,Students who withdraw before classes begin get a 90% refund of the tuition fee. No refund is given after the first week of classes.,faq#c7
+pq-0036,faq-08,Can I pay my fees in instalments?,Fees can be paid in two instalments with approval from the accounts office; the second instalment is due within 45 days.,faq#c8
+pq-0037,faq-08,Can I pay my fees in instalments? Please explain.,Fees can be paid in two instalments with approval from the accounts office; the second instalment is due within 45 days.,faq#c8
+pq-0038,faq-08,quick question - Can I pay my fees in instalments?,Fees can be paid in two instalments with approval from the accounts office; the second instalment is due within 45 days.,faq#c8
+pq-0039,faq-08,Can you tell me can I pay my fees in instalments?,Fees can be paid in two instalments with approval from the accounts office; the second instalment is due within 45 days.,faq#c8
+pq-0040,faq-08,"pls help, can i pay my fees in instalments?",Fees can be paid in two instalments with approval from the accounts office; the second instalment is due within 45 days.,faq#c8
+pq-0041,faq-09,What is the fee for the bus service?,"The college bus fee is Rs. 18,000 per year, paid along with the odd semester fee.",faq#c9
+pq-0042,faq-09,Tell me the fee for the bus service?,"The college bus fee is Rs. 18,000 per year, paid along with the odd semester fee.",faq#c9
+pq-0043,faq-09,What is the fee for the bus service at AMYPO?,"The college bus fee is Rs. 18,000 per year, paid along with the odd semester fee.",faq#c9
+pq-0044,faq-09,What is the fee for the bus service? Please explain.,"The college bus fee is Rs. 18,000 per year, paid along with the odd semester fee.",faq#c9
+pq-0045,faq-09,quick question - What is the fee for the bus service?,"The college bus fee is Rs. 18,000 per year, paid along with the odd semester fee.",faq#c9
+pq-0046,faq-10,Is the exam fee included in the tuition fee?,"No. The end-semester exam fee of Rs. 1,200 per semester is paid separately before hall tickets are issued.",faq#c10
+pq-0047,faq-10,"pls help, is the exam fee included in the tuition fee?","No. The end-semester exam fee of Rs. 1,200 per semester is paid separately before hall tickets are issued.",faq#c10
+pq-0048,faq-10,I want to know: is the exam fee included in the tuition fee?,"No. The end-semester exam fee of Rs. 1,200 per semester is paid separately before hall tickets are issued.",faq#c10
+pq-0049,faq-10,Is the exam fee included in the tuition fee? Please explain.,"No. The end-semester exam fee of Rs. 1,200 per semester is paid separately before hall tickets are issued.",faq#c10
+pq-0050,faq-10,quick question - Is the exam fee included in the tuition fee?,"No. The end-semester exam fee of Rs. 1,200 per semester is paid separately before hall tickets are issued.",faq#c10
+pq-0051,faq-11,When can I download my hall ticket?,Hall tickets can be downloaded from the student portal 5 days before the first end-semester exam.,faq#c11
+pq-0052,faq-11,quick question - When can I download my hall ticket?,Hall tickets can be downloaded from the student portal 5 days before the first end-semester exam.,faq#c11
+pq-0053,faq-11,I want to know: when can I download my hall ticket?,Hall tickets can be downloaded from the student portal 5 days before the first end-semester exam.,faq#c11
+pq-0054,faq-11,Can you tell me when can I download my hall ticket?,Hall tickets can be downloaded from the student portal 5 days before the first end-semester exam.,faq#c11
+pq-0055,faq-11,"pls help, when can i download my hall ticket?",Hall tickets can be downloaded from the student portal 5 days before the first end-semester exam.,faq#c11
+pq-0056,faq-12,Why can't I download my hall ticket?,Hall tickets are withheld if attendance is below 75% in a course or if fees are unpaid. Contact the exam cell with your register number.,faq#c12
+pq-0057,faq-12,why can't i download my hall ticket,Hall tickets are withheld if attendance is below 75% in a course or if fees are unpaid. Contact the exam cell with your register number.,faq#c12
+pq-0058,faq-12,quick question - Why can't I download my hall ticket?,Hall tickets are withheld if attendance is below 75% in a course or if fees are unpaid. Contact the exam cell with your register number.,faq#c12
+pq-0059,faq-12,I want to know: why can't I download my hall ticket?,Hall tickets are withheld if attendance is below 75% in a course or if fees are unpaid. Contact the exam cell with your register number.,faq#c12
+pq-0060,faq-12,"pls help, why can't i download my hall ticket?",Hall tickets are withheld if attendance is below 75% in a course or if fees are unpaid. Contact the exam cell with your register number.,faq#c12
+pq-0061,faq-13,What should I do if I lose my hall ticket?,A duplicate hall ticket can be obtained from the exam cell for a fee of Rs. 100.,faq#c13
+pq-0062,faq-13,what should i do if i lose my hall ticket,A duplicate hall ticket can be obtained from the exam cell for a fee of Rs. 100.,faq#c13
+pq-0063,faq-13,quick question - What should I do if I lose my hall ticket?,A duplicate hall ticket can be obtained from the exam cell for a fee of Rs. 100.,faq#c13
+pq-0064,faq-13,Can you tell me what should I do if I lose my hall ticket?,A duplicate hall ticket can be obtained from the exam cell for a fee of Rs. 100.,faq#c13
+pq-0065,faq-13,What should I do if I lose my hall ticket? Please explain.,A duplicate hall ticket can be obtained from the exam cell for a fee of Rs. 100.,faq#c13
+pq-0066,faq-14,How early should I reach the exam hall?,Students must reach the exam hall 30 minutes before the exam starts. Entry is not allowed after the first 30 minutes of the exam.,faq#c14
+pq-0067,faq-14,how early should i reach the exam hall,Students must reach the exam hall 30 minutes before the exam starts. Entry is not allowed after the first 30 minutes of the exam.,faq#c14
+pq-0068,faq-14,quick question - How early should I reach the exam hall?,Students must reach the exam hall 30 minutes before the exam starts. Entry is not allowed after the first 30 minutes of the exam.,faq#c14
+pq-0069,faq-14,"pls help, how early should i reach the exam hall?",Students must reach the exam hall 30 minutes before the exam starts. Entry is not allowed after the first 30 minutes of the exam.,faq#c14
+pq-0070,faq-14,I want to know: how early should I reach the exam hall?,Students must reach the exam hall 30 minutes before the exam starts. Entry is not allowed after the first 30 minutes of the exam.,faq#c14
+pq-0071,faq-15,Can I use a calculator in the exam?,Only non-programmable scientific calculators are allowed in the exam hall.,faq#c15
+pq-0072,faq-15,Can I use a calculator in the exam at AMYPO?,Only non-programmable scientific calculators are allowed in the exam hall.,faq#c15
+pq-0073,faq-15,quick question - Can I use a calculator in the exam?,Only non-programmable scientific calculators are allowed in the exam hall.,faq#c15
+pq-0074,faq-15,I want to know: can I use a calculator in the exam?,Only non-programmable scientific calculators are allowed in the exam hall.,faq#c15
+pq-0075,faq-15,Can you tell me can I use a calculator in the exam?,Only non-programmable scientific calculators are allowed in the exam hall.,faq#c15
+pq-0076,faq-16,Where are exam results published?,"End-semester results are published on the student portal under Exams > Results, usually within 30 days of the last exam.",faq#c16
+pq-0077,faq-16,where are exam results published,"End-semester results are published on the student portal under Exams > Results, usually within 30 days of the last exam.",faq#c16
+pq-0078,faq-16,"pls help, where are exam results published?","End-semester results are published on the student portal under Exams > Results, usually within 30 days of the last exam.",faq#c16
+pq-0079,faq-16,quick question - Where are exam results published?,"End-semester results are published on the student portal under Exams > Results, usually within 30 days of the last exam.",faq#c16
+pq-0080,faq-16,Can you tell me where are exam results published?,"End-semester results are published on the student portal under Exams > Results, usually within 30 days of the last exam.",faq#c16
+pq-0081,faq-17,How do I apply for re-evaluation?,Apply for re-evaluation on the student portal within 7 days of the results. The fee is Rs. 750 per paper.,faq#c17
+pq-0082,faq-17,How do I apply for re-evaluation? Please explain.,Apply for re-evaluation on the student portal within 7 days of the results. The fee is Rs. 750 per paper.,faq#c17
+pq-0083,faq-17,I want to know: how do I apply for re-evaluation?,Apply for re-evaluation on the student portal within 7 days of the results. The fee is Rs. 750 per paper.,faq#c17
+pq-0084,faq-17,Can you tell me how do I apply for re-evaluation?,Apply for re-evaluation on the student portal within 7 days of the results. The fee is Rs. 750 per paper.,faq#c17
+pq-0085,faq-17,how do i apply for re-evaluation,Apply for re-evaluation on the student portal within 7 days of the results. The fee is Rs. 750 per paper.,faq#c17
+pq-0086,faq-18,How do I get a photocopy of my answer script?,A photocopy of the answer script can be requested within 7 days of the results for Rs. 300 per paper.,faq#c18
+pq-0087,faq-18,Can you tell me how do I get a photocopy of my answer script?,A photocopy of the answer script can be requested within 7 days of the results for Rs. 300 per paper.,faq#c18
+pq-0088,faq-18,how do i get a photocopy of my answer script,A photocopy of the answer script can be requested within 7 days of the results for Rs. 300 per paper.,faq#c18
+pq-0089,faq-18,quick question - How do I get a photocopy of my answer script?,A photocopy of the answer script can be requested within 7 days of the results for Rs. 300 per paper.,faq#c18
+pq-0090,faq-18,Tell me the process to get a photocopy of my answer script?,A photocopy of the answer script can be requested within 7 days of the results for Rs. 300 per paper.,faq#c18
+pq-0091,faq-19,When are arrear exams held?,Arrear (supplementary) exams are held in June and December. The fee is Rs. 400 per paper.,faq#c19
+pq-0092,faq-19,When are arrear exams held at AMYPO?,Arrear (supplementary) exams are held in June and December. The fee is Rs. 400 per paper.,faq#c19
+pq-0093,faq-19,quick question - When are arrear exams held?,Arrear (supplementary) exams are held in June and December. The fee is Rs. 400 per paper.,faq#c19
+pq-0094,faq-19,when are arrear exams held,Arrear (supplementary) exams are held in June and December. The fee is Rs. 400 per paper.,faq#c19
+pq-0095,faq-19,I want to know: when are arrear exams held?,Arrear (supplementary) exams are held in June and December. The fee is Rs. 400 per paper.,faq#c19
+pq-0096,faq-20,What is the passing mark?,To pass a course you need at least 30 out of 60 in the end-semester exam and at least 50 out of 100 overall.,faq#c20
+pq-0097,faq-20,Can you tell me what is the passing mark?,To pass a course you need at least 30 out of 60 in the end-semester exam and at least 50 out of 100 overall.,faq#c20
+pq-0098,faq-20,What is the passing mark at AMYPO?,To pass a course you need at least 30 out of 60 in the end-semester exam and at least 50 out of 100 overall.,faq#c20
+pq-0099,faq-20,Tell me the passing mark?,To pass a course you need at least 30 out of 60 in the end-semester exam and at least 50 out of 100 overall.,faq#c20
+pq-0100,faq-20,what is the passing mark,To pass a course you need at least 30 out of 60 in the end-semester exam and at least 50 out of 100 overall.,faq#c20
+pq-0101,faq-21,What happens if I miss a CAT?,"A retest for a missed CAT is allowed only for medical reasons or on-duty activities, with approval from the head of department.",faq#c21
+pq-0102,faq-21,what happens if i miss a cat,"A retest for a missed CAT is allowed only for medical reasons or on-duty activities, with approval from the head of department.",faq#c21
+pq-0103,faq-21,I want to know: what happens if I miss a CAT?,"A retest for a missed CAT is allowed only for medical reasons or on-duty activities, with approval from the head of department.",faq#c21
+pq-0104,faq-21,What happens if I miss a CAT at AMYPO?,"A retest for a missed CAT is allowed only for medical reasons or on-duty activities, with approval from the head of department.",faq#c21
+pq-0105,faq-21,What happens if I miss a CAT? Please explain.,"A retest for a missed CAT is allowed only for medical reasons or on-duty activities, with approval from the head of department.",faq#c21
+pq-0106,faq-22,What is the hostel fee?,"The hostel fee is Rs. 85,000 per year, which includes mess charges.",faq#c22
+pq-0107,faq-22,quick question - What is the hostel fee?,"The hostel fee is Rs. 85,000 per year, which includes mess charges.",faq#c22
+pq-0108,faq-22,Tell me the hostel fee?,"The hostel fee is Rs. 85,000 per year, which includes mess charges.",faq#c22
+pq-0109,faq-22,What is the hostel fee? Please explain.,"The hostel fee is Rs. 85,000 per year, which includes mess charges.",faq#c22
+pq-0110,faq-22,"pls help, what is the hostel fee?","The hostel fee is Rs. 85,000 per year, which includes mess charges.",faq#c22
+pq-0111,faq-23,What is the hostel curfew time?,Students must be back in the hostel by 9:30 PM every day.,faq#c23
+pq-0112,faq-23,What is the hostel curfew time? Please explain.,Students must be back in the hostel by 9:30 PM every day.,faq#c23
+pq-0113,faq-23,what is the hostel curfew time,Students must be back in the hostel by 9:30 PM every day.,faq#c23
+pq-0114,faq-23,quick question - What is the hostel curfew time?,Students must be back in the hostel by 9:30 PM every day.,faq#c23
+pq-0115,faq-23,Can you tell me what is the hostel curfew time?,Students must be back in the hostel by 9:30 PM every day.,faq#c23
+pq-0116,faq-24,How do I apply for leave from the hostel?,Hostel leave is applied through the warden portal at least one day in advance and needs parent confirmation by phone.,faq#c24
+pq-0117,faq-24,quick question - How do I apply for leave from the hostel?,Hostel leave is applied through the warden portal at least one day in advance and needs parent confirmation by phone.,faq#c24
+pq-0118,faq-24,Tell me the process to apply for leave from the hostel?,Hostel leave is applied through the warden portal at least one day in advance and needs parent confirmation by phone.,faq#c24
+pq-0119,faq-24,how do i apply for leave from the hostel,Hostel leave is applied through the warden portal at least one day in advance and needs parent confirmation by phone.,faq#c24
+pq-0120,faq-24,How do I apply for leave from the hostel? Please explain.,Hostel leave is applied through the warden portal at least one day in advance and needs parent confirmation by phone.,faq#c24
+pq-0121,faq-25,Can guests stay in the hostel?,Guests are not allowed to stay overnight. Parents may visit the hostel visitor room between 4 PM and 7 PM.,faq#c25
+pq-0122,faq-25,Can guests stay in the hostel? Please explain.,Guests are not allowed to stay overnight. Parents may visit the hostel visitor room between 4 PM and 7 PM.,faq#c25
+pq-0123,faq-25,Can you tell me can guests stay in the hostel?,Guests are not allowed to stay overnight. Parents may visit the hostel visitor room between 4 PM and 7 PM.,faq#c25
+pq-0124,faq-25,I want to know: can guests stay in the hostel?,Guests are not allowed to stay overnight. Parents may visit the hostel visitor room between 4 PM and 7 PM.,faq#c25
+pq-0125,faq-25,quick question - Can guests stay in the hostel?,Guests are not allowed to stay overnight. Parents may visit the hostel visitor room between 4 PM and 7 PM.,faq#c25
+pq-0126,faq-26,Can I change my hostel room?,"A room change can be requested once per academic year through the warden, subject to availability.",faq#c26
+pq-0127,faq-26,"pls help, can i change my hostel room?","A room change can be requested once per academic year through the warden, subject to availability.",faq#c26
+pq-0128,faq-26,quick question - Can I change my hostel room?,"A room change can be requested once per academic year through the warden, subject to availability.",faq#c26
+pq-0129,faq-26,Can I change my hostel room at AMYPO?,"A room change can be requested once per academic year through the warden, subject to availability.",faq#c26
+pq-0130,faq-26,Is it possible to change my hostel room?,"A room change can be requested once per academic year through the warden, subject to availability.",faq#c26
+pq-0131,faq-27,Is Wi-Fi available in the hostel?,Wi-Fi is available in all hostel blocks from 6 AM to 11:30 PM using your portal login.,faq#c27
+pq-0132,faq-27,I want to know: is Wi-Fi available in the hostel?,Wi-Fi is available in all hostel blocks from 6 AM to 11:30 PM using your portal login.,faq#c27
+pq-0133,faq-27,Can you tell me is Wi-Fi available in the hostel?,Wi-Fi is available in all hostel blocks from 6 AM to 11:30 PM using your portal login.,faq#c27
+pq-0134,faq-27,is wi-fi available in the hostel,Wi-Fi is available in all hostel blocks from 6 AM to 11:30 PM using your portal login.,faq#c27
+pq-0135,faq-27,Is Wi-Fi available in the hostel? Please explain.,Wi-Fi is available in all hostel blocks from 6 AM to 11:30 PM using your portal login.,faq#c27
+pq-0136,faq-28,What are the mess timings?,"Breakfast is served from 7 AM to 9 AM, lunch from 12:30 PM to 2 PM and dinner from 7:30 PM to 9 PM.",faq#c28
+pq-0137,faq-28,what are the mess timings,"Breakfast is served from 7 AM to 9 AM, lunch from 12:30 PM to 2 PM and dinner from 7:30 PM to 9 PM.",faq#c28
+pq-0138,faq-28,Can you tell me what are the mess timings?,"Breakfast is served from 7 AM to 9 AM, lunch from 12:30 PM to 2 PM and dinner from 7:30 PM to 9 PM.",faq#c28
+pq-0139,faq-28,I want to know: what are the mess timings?,"Breakfast is served from 7 AM to 9 AM, lunch from 12:30 PM to 2 PM and dinner from 7:30 PM to 9 PM.",faq#c28
+pq-0140,faq-28,"pls help, what are the mess timings?","Breakfast is served from 7 AM to 9 AM, lunch from 12:30 PM to 2 PM and dinner from 7:30 PM to 9 PM.",faq#c28
+pq-0141,faq-29,Is there a laundry service in the hostel?,A laundry service is available twice a week at Rs. 600 per month.,faq#c29
+pq-0142,faq-29,Is there a laundry service in the hostel at AMYPO?,A laundry service is available twice a week at Rs. 600 per month.,faq#c29
+pq-0143,faq-29,Can you tell me is there a laundry service in the hostel?,A laundry service is available twice a week at Rs. 600 per month.,faq#c29
+pq-0144,faq-29,is there a laundry service in the hostel,A laundry service is available twice a week at Rs. 600 per month.,faq#c29
+pq-0145,faq-29,quick question - Is there a laundry service in the hostel?,A laundry service is available twice a week at Rs. 600 per month.,faq#c29
+pq-0146,faq-30,What should I do in a medical emergency at the hostel?,"Contact the hostel warden or the campus health centre, which is open 24 hours. An ambulance is available on campus.",faq#c30
+pq-0147,faq-30,I want to know: what should I do in a medical emergency at the hostel?,"Contact the hostel warden or the campus health centre, which is open 24 hours. An ambulance is available on campus.",faq#c30
+pq-0148,faq-30,"pls help, what should i do in a medical emergency at the hostel?","Contact the hostel warden or the campus health centre, which is open 24 hours. An ambulance is available on campus.",faq#c30
+pq-0149,faq-30,What should I do in a medical emergency at the hostel at AMYPO?,"Contact the hostel warden or the campus health centre, which is open 24 hours. An ambulance is available on campus.",faq#c30
+pq-0150,faq-30,Can you tell me what should I do in a medical emergency at the hostel?,"Contact the hostel warden or the campus health centre, which is open 24 hours. An ambulance is available on campus.",faq#c30
+pq-0151,faq-31,How many books can I borrow from the library?,Undergraduate students can borrow up to 4 books at a time for 14 days.,faq#c31
+pq-0152,faq-31,Can you tell me how many books can I borrow from the library?,Undergraduate students can borrow up to 4 books at a time for 14 days.,faq#c31
+pq-0153,faq-31,"pls help, how many books can i borrow from the library?",Undergraduate students can borrow up to 4 books at a time for 14 days.,faq#c31
+pq-0154,faq-31,how many books can i borrow from the library,Undergraduate students can borrow up to 4 books at a time for 14 days.,faq#c31
+pq-0155,faq-31,quick question - How many books can I borrow from the library?,Undergraduate students can borrow up to 4 books at a time for 14 days.,faq#c31
+pq-0156,faq-32,What is the fine for returning a library book late?,The fine for late return is Rs. 2 per day per book.,faq#c32
+pq-0157,faq-32,Can you tell me what is the fine for returning a library book late?,The fine for late return is Rs. 2 per day per book.,faq#c32
+pq-0158,faq-32,I want to know: what is the fine for returning a library book late?,The fine for late return is Rs. 2 per day per book.,faq#c32
+pq-0159,faq-32,Tell me the fine for returning a library book late?,The fine for late return is Rs. 2 per day per book.,faq#c32
+pq-0160,faq-32,What is the fine for returning a library book late? Please explain.,The fine for late return is Rs. 2 per day per book.,faq#c32
+pq-0161,faq-33,What are the library timings?,The library is open from 8 AM to 8 PM on weekdays and from 9 AM to 5 PM on Saturdays. It is closed on Sundays.,faq#c33
+pq-0162,faq-33,what are the library timings,The library is open from 8 AM to 8 PM on weekdays and from 9 AM to 5 PM on Saturdays. It is closed on Sundays.,faq#c33
+pq-0163,faq-33,I want to know: what are the library timings?,The library is open from 8 AM to 8 PM on weekdays and from 9 AM to 5 PM on Saturdays. It is closed on Sundays.,faq#c33
+pq-0164,faq-33,"pls help, what are the library timings?",The library is open from 8 AM to 8 PM on weekdays and from 9 AM to 5 PM on Saturdays. It is closed on Sundays.,faq#c33
+pq-0165,faq-33,What are the library timings at AMYPO?,The library is open from 8 AM to 8 PM on weekdays and from 9 AM to 5 PM on Saturdays. It is closed on Sundays.,faq#c33
+pq-0166,faq-34,What happens if I lose a library book?,"A lost book must be replaced with the same edition, or its cost plus a 10% processing fee must be paid.",faq#c34
+pq-0167,faq-34,What happens if I lose a library book? Please explain.,"A lost book must be replaced with the same edition, or its cost plus a 10% processing fee must be paid.",faq#c34
+pq-0168,faq-34,"pls help, what happens if i lose a library book?","A lost book must be replaced with the same edition, or its cost plus a 10% processing fee must be paid.",faq#c34
+pq-0169,faq-34,quick question - What happens if I lose a library book?,"A lost book must be replaced with the same edition, or its cost plus a 10% processing fee must be paid.",faq#c34
+pq-0170,faq-34,I want to know: what happens if I lose a library book?,"A lost book must be replaced with the same edition, or its cost plus a 10% processing fee must be paid.",faq#c34
+pq-0171,faq-35,Can I access e-journals from home?,E-journals and e-books can be accessed from home through the library remote access link using your portal login.,faq#c35
+pq-0172,faq-35,can i access e-journals from home,E-journals and e-books can be accessed from home through the library remote access link using your portal login.,faq#c35
+pq-0173,faq-35,Can you tell me can I access e-journals from home?,E-journals and e-books can be accessed from home through the library remote access link using your portal login.,faq#c35
+pq-0174,faq-35,I want to know: can I access e-journals from home?,E-journals and e-books can be accessed from home through the library remote access link using your portal login.,faq#c35
+pq-0175,faq-35,quick question - Can I access e-journals from home?,E-journals and e-books can be accessed from home through the library remote access link using your portal login.,faq#c35
+pq-0176,faq-36,Can I borrow reference books?,Reference books cannot be borrowed; they must be used inside the library.,faq#c36
+pq-0177,faq-36,Can I borrow reference books? Please explain.,Reference books cannot be borrowed; they must be used inside the library.,faq#c36
+pq-0178,faq-36,Can I borrow reference books at AMYPO?,Reference books cannot be borrowed; they must be used inside the library.,faq#c36
+pq-0179,faq-36,Can you tell me can I borrow reference books?,Reference books cannot be borrowed; they must be used inside the library.,faq#c36
+pq-0180,faq-36,can i borrow reference books,Reference books cannot be borrowed; they must be used inside the library.,faq#c36
+pq-0181,faq-37,Can I renew a library book?,A book can be renewed once online for another 14 days if no one else has reserved it.,faq#c37
+pq-0182,faq-37,can i renew a library book,A book can be renewed once online for another 14 days if no one else has reserved it.,faq#c37
+pq-0183,faq-37,quick question - Can I renew a library book?,A book can be renewed once online for another 14 days if no one else has reserved it.,faq#c37
+pq-0184,faq-37,"pls help, can i renew a library book?",A book can be renewed once online for another 14 days if no one else has reserved it.,faq#c37
+pq-0185,faq-37,I want to know: can I renew a library book?,A book can be renewed once online for another 14 days if no one else has reserved it.,faq#c37
+pq-0186,faq-38,Does the library have a reading room for exams?,A 24-hour reading room is open during the end-semester exam period.,faq#c38
+pq-0187,faq-38,Does the library have a reading room for exams? Please explain.,A 24-hour reading room is open during the end-semester exam period.,faq#c38
+pq-0188,faq-38,Can you tell me does the library have a reading room for exams?,A 24-hour reading room is open during the end-semester exam period.,faq#c38
+pq-0189,faq-38,does the library have a reading room for exams,A 24-hour reading room is open during the end-semester exam period.,faq#c38
+pq-0190,faq-38,Does the library have a reading room for exams at AMYPO?,A 24-hour reading room is open during the end-semester exam period.,faq#c38
+pq-0191,faq-39,How do I register for placements?,Register on the placement portal by July 31 of your final year and upload your resume in the standard format.,faq#c39
+pq-0192,faq-39,How do I register for placements at AMYPO?,Register on the placement portal by July 31 of your final year and upload your resume in the standard format.,faq#c39
+pq-0193,faq-39,"pls help, how do i register for placements?",Register on the placement portal by July 31 of your final year and upload your resume in the standard format.,faq#c39
+pq-0194,faq-39,Tell me the process to register for placements?,Register on the placement portal by July 31 of your final year and upload your resume in the standard format.,faq#c39
+pq-0195,faq-39,Can you tell me how do I register for placements?,Register on the placement portal by July 31 of your final year and upload your resume in the standard format.,faq#c39
+pq-0196,faq-40,How do I know if I am eligible for a company?,"Each company sets minimum CGPA, maximum backlogs, minimum attendance and required skills. The placement portal shows your eligibility for each drive.",faq#c40
+pq-0197,faq-40,quick question - How do I know if I am eligible for a company?,"Each company sets minimum CGPA, maximum backlogs, minimum attendance and required skills. The placement portal shows your eligibility for each drive.",faq#c40
+pq-0198,faq-40,How do I know if I am eligible for a company at AMYPO?,"Each company sets minimum CGPA, maximum backlogs, minimum attendance and required skills. The placement portal shows your eligibility for each drive.",faq#c40
+pq-0199,faq-40,"pls help, how do i know if i am eligible for a company?","Each company sets minimum CGPA, maximum backlogs, minimum attendance and required skills. The placement portal shows your eligibility for each drive.",faq#c40
+pq-0200,faq-40,how do i know if i am eligible for a company,"Each company sets minimum CGPA, maximum backlogs, minimum attendance and required skills. The placement portal shows your eligibility for each drive.",faq#c40
+pq-0201,faq-41,What are the stages of a placement drive?,"A typical drive has a pre-placement talk, an online aptitude test, one or two technical interviews and an HR interview.",faq#c41
+pq-0202,faq-41,What are the stages of a placement drive at AMYPO?,"A typical drive has a pre-placement talk, an online aptitude test, one or two technical interviews and an HR interview.",faq#c41
+pq-0203,faq-41,Can you tell me what are the stages of a placement drive?,"A typical drive has a pre-placement talk, an online aptitude test, one or two technical interviews and an HR interview.",faq#c41
+pq-0204,faq-41,"pls help, what are the stages of a placement drive?","A typical drive has a pre-placement talk, an online aptitude test, one or two technical interviews and an HR interview.",faq#c41
+pq-0205,faq-41,What are the stages of a placement drive? Please explain.,"A typical drive has a pre-placement talk, an online aptitude test, one or two technical interviews and an HR interview.",faq#c41
+pq-0206,faq-42,Can I attend more placement drives after getting an offer?,"No. Under the one-offer rule, a student who accepts an offer cannot attend further drives, except for a dream company.",faq#c42
+pq-0207,faq-42,Can you tell me can I attend more placement drives after getting an offer?,"No. Under the one-offer rule, a student who accepts an offer cannot attend further drives, except for a dream company.",faq#c42
+pq-0208,faq-42,Can I attend more placement drives after getting an offer? Please explain.,"No. Under the one-offer rule, a student who accepts an offer cannot attend further drives, except for a dream company.",faq#c42
+pq-0209,faq-42,Can I attend more placement drives after getting an offer at AMYPO?,"No. Under the one-offer rule, a student who accepts an offer cannot attend further drives, except for a dream company.",faq#c42
+pq-0210,faq-42,Is it possible to attend more placement drives after getting an offer?,"No. Under the one-offer rule, a student who accepts an offer cannot attend further drives, except for a dream company.",faq#c42
+pq-0211,faq-43,What is a dream company?,A dream company is one offering a CTC of at least Rs. 10 LPA. A placed student may apply to one dream company drive.,faq#c43
+pq-0212,faq-43,What is a dream company? Please explain.,A dream company is one offering a CTC of at least Rs. 10 LPA. A placed student may apply to one dream company drive.,faq#c43
+pq-0213,faq-43,what is a dream company,A dream company is one offering a CTC of at least Rs. 10 LPA. A placed student may apply to one dream company drive.,faq#c43
+pq-0214,faq-43,quick question - What is a dream company?,A dream company is one offering a CTC of at least Rs. 10 LPA. A placed student may apply to one dream company drive.,faq#c43
+pq-0215,faq-43,I want to know: what is a dream company?,A dream company is one offering a CTC of at least Rs. 10 LPA. A placed student may apply to one dream company drive.,faq#c43
+pq-0216,faq-44,Is placement training compulsory?,Yes. Students need at least 80% attendance in placement training sessions to take part in drives.,faq#c44
+pq-0217,faq-44,is placement training compulsory,Yes. Students need at least 80% attendance in placement training sessions to take part in drives.,faq#c44
+pq-0218,faq-44,Is placement training compulsory? Please explain.,Yes. Students need at least 80% attendance in placement training sessions to take part in drives.,faq#c44
+pq-0219,faq-44,quick question - Is placement training compulsory?,Yes. Students need at least 80% attendance in placement training sessions to take part in drives.,faq#c44
+pq-0220,faq-44,"pls help, is placement training compulsory?",Yes. Students need at least 80% attendance in placement training sessions to take part in drives.,faq#c44
+pq-0221,faq-45,What happens if I reject an offer after accepting it?,Backing out after accepting an offer leads to being debarred from all further placement drives.,faq#c45
+pq-0222,faq-45,what happens if i reject an offer after accepting it,Backing out after accepting an offer leads to being debarred from all further placement drives.,faq#c45
+pq-0223,faq-45,I want to know: what happens if I reject an offer after accepting it?,Backing out after accepting an offer leads to being debarred from all further placement drives.,faq#c45
+pq-0224,faq-45,What happens if I reject an offer after accepting it? Please explain.,Backing out after accepting an offer leads to being debarred from all further placement drives.,faq#c45
+pq-0225,faq-45,What happens if I reject an offer after accepting it at AMYPO?,Backing out after accepting an offer leads to being debarred from all further placement drives.,faq#c45
+pq-0226,faq-46,What should I bring to a placement drive?,"Bring two printed copies of your resume, your college ID card and a government photo ID, and follow the formal dress code.",faq#c46
+pq-0227,faq-46,quick question - What should I bring to a placement drive?,"Bring two printed copies of your resume, your college ID card and a government photo ID, and follow the formal dress code.",faq#c46
+pq-0228,faq-46,What should I bring to a placement drive at AMYPO?,"Bring two printed copies of your resume, your college ID card and a government photo ID, and follow the formal dress code.",faq#c46
+pq-0229,faq-46,what should i bring to a placement drive,"Bring two printed copies of your resume, your college ID card and a government photo ID, and follow the formal dress code.",faq#c46
+pq-0230,faq-46,What should I bring to a placement drive? Please explain.,"Bring two printed copies of your resume, your college ID card and a government photo ID, and follow the formal dress code.",faq#c46
+pq-0231,faq-47,Are internships with pre-placement offers allowed?,Yes. Internships with a pre-placement offer (PPO) are allowed in the final semester with approval from the placement cell.,faq#c47
+pq-0232,faq-47,I want to know: are internships with pre-placement offers allowed?,Yes. Internships with a pre-placement offer (PPO) are allowed in the final semester with approval from the placement cell.,faq#c47
+pq-0233,faq-47,Are internships with pre-placement offers allowed at AMYPO?,Yes. Internships with a pre-placement offer (PPO) are allowed in the final semester with approval from the placement cell.,faq#c47
+pq-0234,faq-47,"pls help, are internships with pre-placement offers allowed?",Yes. Internships with a pre-placement offer (PPO) are allowed in the final semester with approval from the placement cell.,faq#c47
+pq-0235,faq-47,quick question - Are internships with pre-placement offers allowed?,Yes. Internships with a pre-placement offer (PPO) are allowed in the final semester with approval from the placement cell.,faq#c47
+pq-0236,faq-48,Who do I contact for placement questions?,"Contact the placement cell in the Admin Block, first floor, or email placements@amypo.example.",faq#c48
+pq-0237,faq-48,Who do I contact for placement questions? Please explain.,"Contact the placement cell in the Admin Block, first floor, or email placements@amypo.example.",faq#c48
+pq-0238,faq-48,Can you tell me who do I contact for placement questions?,"Contact the placement cell in the Admin Block, first floor, or email placements@amypo.example.",faq#c48
+pq-0239,faq-48,"pls help, who do i contact for placement questions?","Contact the placement cell in the Admin Block, first floor, or email placements@amypo.example.",faq#c48
+pq-0240,faq-48,quick question - Who do I contact for placement questions?,"Contact the placement cell in the Admin Block, first floor, or email placements@amypo.example.",faq#c48
+pq-0241,faq-49,What is the student portal address?,The student portal is available at portal.amypo.example.,faq#c49
+pq-0242,faq-49,"pls help, what is the student portal address?",The student portal is available at portal.amypo.example.,faq#c49
+pq-0243,faq-49,Can you tell me what is the student portal address?,The student portal is available at portal.amypo.example.,faq#c49
+pq-0244,faq-49,quick question - What is the student portal address?,The student portal is available at portal.amypo.example.,faq#c49
+pq-0245,faq-49,What is the student portal address? Please explain.,The student portal is available at portal.amypo.example.,faq#c49
+pq-0246,faq-50,What is my portal username?,"Your portal username is your register number, for example S2023CS041.",faq#c50
+pq-0247,faq-50,Tell me my portal username?,"Your portal username is your register number, for example S2023CS041.",faq#c50
+pq-0248,faq-50,What is my portal username? Please explain.,"Your portal username is your register number, for example S2023CS041.",faq#c50
+pq-0249,faq-50,What is my portal username at AMYPO?,"Your portal username is your register number, for example S2023CS041.",faq#c50
+pq-0250,faq-50,quick question - What is my portal username?,"Your portal username is your register number, for example S2023CS041.",faq#c50
+pq-0251,faq-51,How do I reset my portal password?,Use Forgot Password on the login page. An OTP is sent to your registered mobile number.,faq#c51
+pq-0252,faq-51,how do i reset my portal password,Use Forgot Password on the login page. An OTP is sent to your registered mobile number.,faq#c51
+pq-0253,faq-51,"pls help, how do i reset my portal password?",Use Forgot Password on the login page. An OTP is sent to your registered mobile number.,faq#c51
+pq-0254,faq-51,Tell me the process to reset my portal password?,Use Forgot Password on the login page. An OTP is sent to your registered mobile number.,faq#c51
+pq-0255,faq-51,quick question - How do I reset my portal password?,Use Forgot Password on the login page. An OTP is sent to your registered mobile number.,faq#c51
+pq-0256,faq-52,Why is my portal account locked?,The account is locked for 30 minutes after 5 failed login attempts.,faq#c52
+pq-0257,faq-52,quick question - Why is my portal account locked?,The account is locked for 30 minutes after 5 failed login attempts.,faq#c52
+pq-0258,faq-52,Why is my portal account locked? Please explain.,The account is locked for 30 minutes after 5 failed login attempts.,faq#c52
+pq-0259,faq-52,why is my portal account locked,The account is locked for 30 minutes after 5 failed login attempts.,faq#c52
+pq-0260,faq-52,Why is my portal account locked at AMYPO?,The account is locked for 30 minutes after 5 failed login attempts.,faq#c52
+pq-0261,faq-53,How do I change my registered mobile number?,Submit the mobile number change form at the admin office with your ID card. The change takes effect within 2 working days.,faq#c53
+pq-0262,faq-53,I want to know: how do I change my registered mobile number?,Submit the mobile number change form at the admin office with your ID card. The change takes effect within 2 working days.,faq#c53
+pq-0263,faq-53,"pls help, how do i change my registered mobile number?",Submit the mobile number change form at the admin office with your ID card. The change takes effect within 2 working days.,faq#c53
+pq-0264,faq-53,Can you tell me how do I change my registered mobile number?,Submit the mobile number change form at the admin office with your ID card. The change takes effect within 2 working days.,faq#c53
+pq-0265,faq-53,quick question - How do I change my registered mobile number?,Submit the mobile number change form at the admin office with your ID card. The change takes effect within 2 working days.,faq#c53
+pq-0266,faq-54,Is two-factor authentication available on the portal?,Yes. Two-factor authentication can be turned on under Profile > Security.,faq#c54
+pq-0267,faq-54,I want to know: is two-factor authentication available on the portal?,Yes. Two-factor authentication can be turned on under Profile > Security.,faq#c54
+pq-0268,faq-54,"pls help, is two-factor authentication available on the portal?",Yes. Two-factor authentication can be turned on under Profile > Security.,faq#c54
+pq-0269,faq-54,Is two-factor authentication available on the portal at AMYPO?,Yes. Two-factor authentication can be turned on under Profile > Security.,faq#c54
+pq-0270,faq-54,quick question - Is two-factor authentication available on the portal?,Yes. Two-factor authentication can be turned on under Profile > Security.,faq#c54
+pq-0271,faq-55,Where can I see my attendance on the portal?,Course-wise attendance is shown on the portal under Academics > Attendance and is updated every week.,faq#c55
+pq-0272,faq-55,"pls help, where can i see my attendance on the portal?",Course-wise attendance is shown on the portal under Academics > Attendance and is updated every week.,faq#c55
+pq-0273,faq-55,I want to know: where can I see my attendance on the portal?,Course-wise attendance is shown on the portal under Academics > Attendance and is updated every week.,faq#c55
+pq-0274,faq-55,Can you tell me where can I see my attendance on the portal?,Course-wise attendance is shown on the portal under Academics > Attendance and is updated every week.,faq#c55
+pq-0275,faq-55,quick question - Where can I see my attendance on the portal?,Course-wise attendance is shown on the portal under Academics > Attendance and is updated every week.,faq#c55
+pq-0276,faq-56,Where can I see my timetable?,Your class timetable and exam timetable are on the portal under Academics > Timetable.,faq#c56
+pq-0277,faq-56,Where can I see my timetable at AMYPO?,Your class timetable and exam timetable are on the portal under Academics > Timetable.,faq#c56
+pq-0278,faq-56,Where can I see my timetable? Please explain.,Your class timetable and exam timetable are on the portal under Academics > Timetable.,faq#c56
+pq-0279,faq-56,"pls help, where can i see my timetable?",Your class timetable and exam timetable are on the portal under Academics > Timetable.,faq#c56
+pq-0280,faq-56,quick question - Where can I see my timetable?,Your class timetable and exam timetable are on the portal under Academics > Timetable.,faq#c56
+pq-0281,faq-57,Who do I contact if the portal is not working?,Email the IT helpdesk at helpdesk@amypo.example or call extension 2100 between 9 AM and 5 PM.,faq#c57
+pq-0282,faq-57,I want to know: who do I contact if the portal is not working?,Email the IT helpdesk at helpdesk@amypo.example or call extension 2100 between 9 AM and 5 PM.,faq#c57
+pq-0283,faq-57,quick question - Who do I contact if the portal is not working?,Email the IT helpdesk at helpdesk@amypo.example or call extension 2100 between 9 AM and 5 PM.,faq#c57
+pq-0284,faq-57,"pls help, who do i contact if the portal is not working?",Email the IT helpdesk at helpdesk@amypo.example or call extension 2100 between 9 AM and 5 PM.,faq#c57
+pq-0285,faq-57,Who do I contact if the portal is not working at AMYPO?,Email the IT helpdesk at helpdesk@amypo.example or call extension 2100 between 9 AM and 5 PM.,faq#c57
+pq-0286,faq-58,Can parents access the portal?,Parents get a separate login to view attendance and results. It is created on request at the admin office.,faq#c58
+pq-0287,faq-58,I want to know: can parents access the portal?,Parents get a separate login to view attendance and results. It is created on request at the admin office.,faq#c58
+pq-0288,faq-58,Can parents access the portal? Please explain.,Parents get a separate login to view attendance and results. It is created on request at the admin office.,faq#c58
+pq-0289,faq-58,Can parents access the portal at AMYPO?,Parents get a separate login to view attendance and results. It is created on request at the admin office.,faq#c58
+pq-0290,faq-58,quick question - Can parents access the portal?,Parents get a separate login to view attendance and results. It is created on request at the admin office.,faq#c58

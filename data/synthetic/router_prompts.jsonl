@@ -1,0 +1,200 @@
+{"id": "rp-001", "query": "Define a router.", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": null}
+{"id": "rp-002", "query": "What is the full form of SQL?", "complexity_label": "low", "hint": "low", "category": "acronym", "repeat_of": null}
+{"id": "rp-003", "query": "Write a multithreaded Java program that implements a bounded producer-consumer queue, and explain how it avoids race conditions and deadlocks.", "complexity_label": "high", "hint": null, "category": "concurrent_code", "repeat_of": null}
+{"id": "rp-004", "query": "Define an operating system.", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": null}
+{"id": "rp-005", "query": "What is the full form of CPU?", "complexity_label": "low", "hint": null, "category": "acronym", "repeat_of": null}
+{"id": "rp-006", "query": "Derive the formula for the effective access time with a TLB step by step, explaining every step.", "complexity_label": "high", "hint": null, "category": "derivation", "repeat_of": null}
+{"id": "rp-007", "query": "Design a hostel room allocation system. Cover the data model, API endpoints, scaling strategy and failure handling in detail.", "complexity_label": "high", "hint": "high", "category": "design", "repeat_of": null}
+{"id": "rp-008", "query": "What is the full form of ACID?", "complexity_label": "low", "hint": null, "category": "acronym", "repeat_of": null}
+{"id": "rp-009", "query": "Write a Python function to check whether a string is a palindrome.", "complexity_label": "medium", "hint": null, "category": "code", "repeat_of": null}
+{"id": "rp-010", "query": "Design a URL shortener. Cover the data model, API endpoints, scaling strategy and failure handling in detail.", "complexity_label": "high", "hint": "high", "category": "design", "repeat_of": null}
+{"id": "rp-011", "query": "Give a one-line definition of cache memory.", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": null}
+{"id": "rp-012", "query": "How does round robin scheduling work? Keep it short.", "complexity_label": "medium", "hint": "medium", "category": "explain", "repeat_of": null}
+{"id": "rp-013", "query": "Write a detailed 1000-word essay on ethics of using AI tools in education, with examples and a conclusion.", "complexity_label": "high", "hint": "high", "category": "essay", "repeat_of": null}
+{"id": "rp-014", "query": "Give a one-line definition of a compiler.", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": null}
+{"id": "rp-015", "query": "Explain how round robin scheduling works with a simple example.", "complexity_label": "medium", "hint": "medium", "category": "explain", "repeat_of": null}
+{"id": "rp-016", "query": "Explain how the CAP theorem works with a simple example.", "complexity_label": "medium", "hint": "medium", "category": "explain", "repeat_of": null}
+{"id": "rp-017", "query": "Design an online exam platform with proctoring. Cover the data model, API endpoints, scaling strategy and failure handling in detail.", "complexity_label": "high", "hint": "high", "category": "design", "repeat_of": null}
+{"id": "rp-018", "query": "Write a detailed 1000-word essay on privacy risks of student data in colleges, with examples and a conclusion.", "complexity_label": "high", "hint": null, "category": "essay", "repeat_of": null}
+{"id": "rp-019", "query": "Write a detailed 1000-word essay on the role of entrance exams in engineering admissions, with examples and a conclusion.", "complexity_label": "high", "hint": "high", "category": "essay", "repeat_of": null}
+{"id": "rp-020", "query": "Define a foreign key.", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": null}
+{"id": "rp-021", "query": "Write a multithreaded Java program that downloads files in parallel with a fixed thread pool, and explain how it avoids race conditions and deadlocks.", "complexity_label": "high", "hint": "high", "category": "concurrent_code", "repeat_of": null}
+{"id": "rp-022", "query": "What does DBMS stand for?", "complexity_label": "low", "hint": null, "category": "acronym", "repeat_of": null}
+{"id": "rp-023", "query": "Define a thread.", "complexity_label": "low", "hint": "low", "category": "definition", "repeat_of": null}
+{"id": "rp-024", "query": "What is an operating system?", "complexity_label": "low", "hint": "high", "category": "definition", "repeat_of": null}
+{"id": "rp-025", "query": "Give a one-line definition of Big O notation.", "complexity_label": "low", "hint": "medium", "category": "definition", "repeat_of": null}
+{"id": "rp-026", "query": "Define normalization.", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": null}
+{"id": "rp-027", "query": "What is the time complexity of BFS on an adjacency list and why?", "complexity_label": "medium", "hint": null, "category": "complexity", "repeat_of": null}
+{"id": "rp-028", "query": "Write a Python function to remove duplicates from a list while keeping order.", "complexity_label": "medium", "hint": null, "category": "code", "repeat_of": null}
+{"id": "rp-029", "query": "How does two-phase locking work? Keep it short.", "complexity_label": "medium", "hint": null, "category": "explain", "repeat_of": null}
+{"id": "rp-030", "query": "Write a Python function to compute the factorial of n iteratively.", "complexity_label": "medium", "hint": "medium", "category": "code", "repeat_of": null}
+{"id": "rp-031", "query": "What is the full form of DNS?", "complexity_label": "low", "hint": "high", "category": "acronym", "repeat_of": null}
+{"id": "rp-032", "query": "Design a food delivery app backend. Cover the data model, API endpoints, scaling strategy and failure handling in detail.", "complexity_label": "high", "hint": null, "category": "design", "repeat_of": null}
+{"id": "rp-033", "query": "Write a Python function to count the vowels in a sentence.", "complexity_label": "medium", "hint": "medium", "category": "code", "repeat_of": null}
+{"id": "rp-034", "query": "Prove that every comparison-based sorting algorithm needs Omega(n log n) comparisons in the worst case.", "complexity_label": "high", "hint": "high", "category": "proof", "repeat_of": null}
+{"id": "rp-035", "query": "What is an array?", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": null}
+{"id": "rp-036", "query": "Explain how JWT authentication works with a simple example.", "complexity_label": "medium", "hint": "high", "category": "explain", "repeat_of": null}
+{"id": "rp-037", "query": "Give a one-line definition of gradient descent.", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": null}
+{"id": "rp-038", "query": "What does OOP stand for?", "complexity_label": "low", "hint": null, "category": "acronym", "repeat_of": null}
+{"id": "rp-039", "query": "List the advantages and disadvantages of denormalizing a database.", "complexity_label": "medium", "hint": "medium", "category": "list", "repeat_of": null}
+{"id": "rp-040", "query": "Write a Python function to reverse a string.", "complexity_label": "medium", "hint": null, "category": "code", "repeat_of": null}
+{"id": "rp-041", "query": "What is the time complexity of bubble sort and why?", "complexity_label": "medium", "hint": "medium", "category": "complexity", "repeat_of": null}
+{"id": "rp-042", "query": "Prove that 3-SAT is NP-complete, given that SAT is NP-complete.", "complexity_label": "high", "hint": null, "category": "proof", "repeat_of": null}
+{"id": "rp-043", "query": "Explain how TCP congestion control works with a simple example.", "complexity_label": "medium", "hint": null, "category": "explain", "repeat_of": null}
+{"id": "rp-044", "query": "What is the full form of API?", "complexity_label": "low", "hint": null, "category": "acronym", "repeat_of": null}
+{"id": "rp-045", "query": "What is a foreign key?", "complexity_label": "low", "hint": "low", "category": "definition", "repeat_of": null}
+{"id": "rp-046", "query": "Explain how DNS resolution works with a simple example.", "complexity_label": "medium", "hint": "medium", "category": "explain", "repeat_of": null}
+{"id": "rp-047", "query": "Calculate the number of edges in a complete graph with 12 vertices.", "complexity_label": "medium", "hint": "low", "category": "math", "repeat_of": null}
+{"id": "rp-048", "query": "What is the full form of IDE?", "complexity_label": "low", "hint": null, "category": "acronym", "repeat_of": null}
+{"id": "rp-049", "query": "Explain how k-means clustering works with a simple example.", "complexity_label": "medium", "hint": null, "category": "explain", "repeat_of": null}
+{"id": "rp-050", "query": "(a) Explain processes. (b) Compare processes with threads, giving two real-world examples. (c) Recommend one for a college ERP system and justify it.", "complexity_label": "high", "hint": "high", "category": "multi_part", "repeat_of": null}
+{"id": "rp-051", "query": "Explain how two-phase locking works with a simple example.", "complexity_label": "medium", "hint": "medium", "category": "explain", "repeat_of": null}
+{"id": "rp-052", "query": "(a) Explain paging. (b) Compare paging with segmentation, giving two real-world examples. (c) Recommend one for a college ERP system and justify it.", "complexity_label": "high", "hint": null, "category": "multi_part", "repeat_of": null}
+{"id": "rp-053", "query": "List the advantages and disadvantages of linked lists compared to arrays.", "complexity_label": "medium", "hint": null, "category": "list", "repeat_of": null}
+{"id": "rp-054", "query": "What is a compiler?", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": null}
+{"id": "rp-055", "query": "What is cloud computing?", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": null}
+{"id": "rp-056", "query": "How does paging work? Keep it short.", "complexity_label": "medium", "hint": "medium", "category": "explain", "repeat_of": null}
+{"id": "rp-057", "query": "How does database indexing work? Keep it short.", "complexity_label": "medium", "hint": null, "category": "explain", "repeat_of": null}
+{"id": "rp-058", "query": "What is a container?", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": null}
+{"id": "rp-059", "query": "Explain how a hash map works with a simple example.", "complexity_label": "medium", "hint": null, "category": "explain", "repeat_of": null}
+{"id": "rp-060", "query": "Give a one-line definition of normalization.", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": null}
+{"id": "rp-061", "query": "(a) Explain optimistic locking. (b) Compare optimistic locking with pessimistic locking, giving two real-world examples. (c) Recommend one for a college ERP system and justify it.", "complexity_label": "high", "hint": null, "category": "multi_part", "repeat_of": null}
+{"id": "rp-062", "query": "Calculate 15% of 2,400.", "complexity_label": "medium", "hint": null, "category": "math", "repeat_of": null}
+{"id": "rp-063", "query": "Give a one-line definition of a primary key.", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": null}
+{"id": "rp-064", "query": "(a) Explain REST. (b) Compare REST with gRPC, giving two real-world examples. (c) Recommend one for a college ERP system and justify it.", "complexity_label": "high", "hint": null, "category": "multi_part", "repeat_of": null}
+{"id": "rp-065", "query": "Write a multithreaded Java program that counts words in many files concurrently and merges the results, and explain how it avoids race conditions and deadlocks.", "complexity_label": "high", "hint": "high", "category": "concurrent_code", "repeat_of": null}
+{"id": "rp-066", "query": "(a) Explain monoliths. (b) Compare monoliths with microservices, giving two real-world examples. (c) Recommend one for a college ERP system and justify it.", "complexity_label": "high", "hint": null, "category": "multi_part", "repeat_of": null}
+{"id": "rp-067", "query": "What is the full form of UDP?", "complexity_label": "low", "hint": null, "category": "acronym", "repeat_of": null}
+{"id": "rp-068", "query": "What is a list comprehension?", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": null}
+{"id": "rp-069", "query": "What is the time complexity of inserting into a balanced BST and why?", "complexity_label": "medium", "hint": "medium", "category": "complexity", "repeat_of": null}
+{"id": "rp-070", "query": "What is the time complexity of building a heap from an array and why?", "complexity_label": "medium", "hint": "medium", "category": "complexity", "repeat_of": null}
+{"id": "rp-071", "query": "Derive the normal equations for linear regression step by step, explaining every step.", "complexity_label": "high", "hint": "medium", "category": "derivation", "repeat_of": null}
+{"id": "rp-072", "query": "(a) Explain bagging. (b) Compare bagging with boosting, giving two real-world examples. (c) Recommend one for a college ERP system and justify it.", "complexity_label": "high", "hint": null, "category": "multi_part", "repeat_of": null}
+{"id": "rp-073", "query": "Define cloud computing.", "complexity_label": "low", "hint": "low", "category": "definition", "repeat_of": null}
+{"id": "rp-074", "query": "What does TCP stand for?", "complexity_label": "low", "hint": "high", "category": "acronym", "repeat_of": null}
+{"id": "rp-075", "query": "Give a one-line definition of recursion.", "complexity_label": "low", "hint": "low", "category": "definition", "repeat_of": null}
+{"id": "rp-076", "query": "What does HTTP stand for?", "complexity_label": "low", "hint": "low", "category": "acronym", "repeat_of": null}
+{"id": "rp-077", "query": "Give a one-line definition of a lambda function.", "complexity_label": "low", "hint": "low", "category": "definition", "repeat_of": null}
+{"id": "rp-078", "query": "Calculate the average of 45, 67, 89 and 23.", "complexity_label": "medium", "hint": "medium", "category": "math", "repeat_of": null}
+{"id": "rp-079", "query": "List the advantages and disadvantages of recursion.", "complexity_label": "medium", "hint": null, "category": "list", "repeat_of": null}
+{"id": "rp-080", "query": "What is a mutex?", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": null}
+{"id": "rp-081", "query": "Write a detailed 1000-word essay on the future of cloud computing, with examples and a conclusion.", "complexity_label": "high", "hint": "high", "category": "essay", "repeat_of": null}
+{"id": "rp-082", "query": "Write a detailed 1000-word essay on green computing and data centre energy use, with examples and a conclusion.", "complexity_label": "high", "hint": "high", "category": "essay", "repeat_of": null}
+{"id": "rp-083", "query": "How does a hash map work? Keep it short.", "complexity_label": "medium", "hint": null, "category": "explain", "repeat_of": null}
+{"id": "rp-084", "query": "Derive the expected number of comparisons made by randomized quicksort step by step, explaining every step.", "complexity_label": "high", "hint": null, "category": "derivation", "repeat_of": null}
+{"id": "rp-085", "query": "Explain how the virtual DOM in React works with a simple example.", "complexity_label": "medium", "hint": null, "category": "explain", "repeat_of": null}
+{"id": "rp-086", "query": "Give a one-line definition of a foreign key.", "complexity_label": "low", "hint": "low", "category": "definition", "repeat_of": null}
+{"id": "rp-087", "query": "Give a one-line definition of an API.", "complexity_label": "low", "hint": "low", "category": "definition", "repeat_of": null}
+{"id": "rp-088", "query": "Compare HTTP and HTTPS.", "complexity_label": "medium", "hint": "medium", "category": "compare", "repeat_of": null}
+{"id": "rp-089", "query": "Design a ride-sharing backend. Cover the data model, API endpoints, scaling strategy and failure handling in detail.", "complexity_label": "high", "hint": "high", "category": "design", "repeat_of": null}
+{"id": "rp-090", "query": "List the advantages and disadvantages of microservices.", "complexity_label": "medium", "hint": null, "category": "list", "repeat_of": null}
+{"id": "rp-091", "query": "Compare stack and queue.", "complexity_label": "medium", "hint": null, "category": "compare", "repeat_of": null}
+{"id": "rp-092", "query": "How does the CAP theorem work? Keep it short.", "complexity_label": "medium", "hint": "medium", "category": "explain", "repeat_of": null}
+{"id": "rp-093", "query": "Derive why building a binary heap from an array takes O(n) time step by step, explaining every step.", "complexity_label": "high", "hint": "high", "category": "derivation", "repeat_of": null}
+{"id": "rp-094", "query": "What is recursion?", "complexity_label": "low", "hint": "medium", "category": "definition", "repeat_of": null}
+{"id": "rp-095", "query": "Design a video streaming service. Cover the data model, API endpoints, scaling strategy and failure handling in detail.", "complexity_label": "high", "hint": null, "category": "design", "repeat_of": null}
+{"id": "rp-096", "query": "Prove that a tree with n nodes has exactly n-1 edges.", "complexity_label": "high", "hint": "medium", "category": "proof", "repeat_of": null}
+{"id": "rp-097", "query": "What is a primary key?", "complexity_label": "low", "hint": "low", "category": "definition", "repeat_of": null}
+{"id": "rp-098", "query": "List the advantages and disadvantages of using an ORM.", "complexity_label": "medium", "hint": null, "category": "list", "repeat_of": null}
+{"id": "rp-099", "query": "Define a heap.", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": null}
+{"id": "rp-100", "query": "Design a library management system with fines. Cover the data model, API endpoints, scaling strategy and failure handling in detail.", "complexity_label": "high", "hint": "high", "category": "design", "repeat_of": null}
+{"id": "rp-101", "query": "(a) Explain TCP. (b) Compare TCP with QUIC, giving two real-world examples. (c) Recommend one for a college ERP system and justify it.", "complexity_label": "high", "hint": "high", "category": "multi_part", "repeat_of": null}
+{"id": "rp-102", "query": "How does binary search work? Keep it short.", "complexity_label": "medium", "hint": "medium", "category": "explain", "repeat_of": null}
+{"id": "rp-103", "query": "Compare SQL and NoSQL databases.", "complexity_label": "medium", "hint": null, "category": "compare", "repeat_of": null}
+{"id": "rp-104", "query": "Write a Python function to find the most frequent word in a text.", "complexity_label": "medium", "hint": "medium", "category": "code", "repeat_of": null}
+{"id": "rp-105", "query": "Give a one-line definition of a deadlock.", "complexity_label": "low", "hint": "low", "category": "definition", "repeat_of": null}
+{"id": "rp-106", "query": "What does SQL stand for?", "complexity_label": "low", "hint": "low", "category": "acronym", "repeat_of": null}
+{"id": "rp-107", "query": "Design a notification service that sends 1 million messages a day. Cover the data model, API endpoints, scaling strategy and failure handling in detail.", "complexity_label": "high", "hint": "high", "category": "design", "repeat_of": null}
+{"id": "rp-108", "query": "What is an interface in Java?", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": null}
+{"id": "rp-109", "query": "Give a one-line definition of TCP.", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": null}
+{"id": "rp-110", "query": "Prove that the halting problem is undecidable.", "complexity_label": "high", "hint": "high", "category": "proof", "repeat_of": null}
+{"id": "rp-111", "query": "Explain how Python decorators works with a simple example.", "complexity_label": "medium", "hint": null, "category": "explain", "repeat_of": null}
+{"id": "rp-112", "query": "Compare paging and segmentation.", "complexity_label": "medium", "hint": "medium", "category": "compare", "repeat_of": null}
+{"id": "rp-113", "query": "What is a process?", "complexity_label": "low", "hint": "low", "category": "definition", "repeat_of": null}
+{"id": "rp-114", "query": "Calculate the compound interest on Rs. 10,000 at 8% per year for 3 years.", "complexity_label": "medium", "hint": null, "category": "math", "repeat_of": null}
+{"id": "rp-115", "query": "Compare REST and GraphQL.", "complexity_label": "medium", "hint": "high", "category": "compare", "repeat_of": null}
+{"id": "rp-116", "query": "Give a one-line definition of a firewall.", "complexity_label": "low", "hint": "low", "category": "definition", "repeat_of": null}
+{"id": "rp-117", "query": "Compare merge sort and quicksort.", "complexity_label": "medium", "hint": "high", "category": "compare", "repeat_of": null}
+{"id": "rp-118", "query": "Define a loop.", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": null}
+{"id": "rp-119", "query": "Calculate the binary representation of 173.", "complexity_label": "medium", "hint": null, "category": "math", "repeat_of": null}
+{"id": "rp-120", "query": "Give a one-line definition of a heap.", "complexity_label": "low", "hint": "high", "category": "definition", "repeat_of": null}
+{"id": "rp-121", "query": "What does ACID stand for?", "complexity_label": "low", "hint": null, "category": "acronym", "repeat_of": null}
+{"id": "rp-122", "query": "Compare Java and Python.", "complexity_label": "medium", "hint": null, "category": "compare", "repeat_of": null}
+{"id": "rp-123", "query": "Give a one-line definition of cloud computing.", "complexity_label": "low", "hint": "low", "category": "definition", "repeat_of": null}
+{"id": "rp-124", "query": "Prove that Dijkstra's algorithm is correct for graphs with non-negative edge weights.", "complexity_label": "high", "hint": null, "category": "proof", "repeat_of": null}
+{"id": "rp-125", "query": "Give a one-line definition of a thread.", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": null}
+{"id": "rp-126", "query": "Define a primary key.", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": null}
+{"id": "rp-127", "query": "What is a pointer?", "complexity_label": "low", "hint": "low", "category": "definition", "repeat_of": null}
+{"id": "rp-128", "query": "Compare an abstract class and an interface.", "complexity_label": "medium", "hint": "medium", "category": "compare", "repeat_of": null}
+{"id": "rp-129", "query": "How does k-means clustering work? Keep it short.", "complexity_label": "medium", "hint": "medium", "category": "explain", "repeat_of": null}
+{"id": "rp-130", "query": "Design a college placement portal. Cover the data model, API endpoints, scaling strategy and failure handling in detail.", "complexity_label": "high", "hint": "high", "category": "design", "repeat_of": null}
+{"id": "rp-131", "query": "What does RAM stand for?", "complexity_label": "low", "hint": "low", "category": "acronym", "repeat_of": null}
+{"id": "rp-132", "query": "List the advantages and disadvantages of cloud hosting.", "complexity_label": "medium", "hint": "medium", "category": "list", "repeat_of": null}
+{"id": "rp-133", "query": "What is encapsulation?", "complexity_label": "low", "hint": "high", "category": "definition", "repeat_of": null}
+{"id": "rp-134", "query": "What is the time complexity of heap sort and why?", "complexity_label": "medium", "hint": "medium", "category": "complexity", "repeat_of": null}
+{"id": "rp-135", "query": "Write a multithreaded Java program that simulates a bank with concurrent transfers between accounts, and explain how it avoids race conditions and deadlocks.", "complexity_label": "high", "hint": "high", "category": "concurrent_code", "repeat_of": null}
+{"id": "rp-136", "query": "How does garbage collection in Java work? Keep it short.", "complexity_label": "medium", "hint": null, "category": "explain", "repeat_of": null}
+{"id": "rp-137", "query": "Explain how paging works with a simple example.", "complexity_label": "medium", "hint": null, "category": "explain", "repeat_of": null}
+{"id": "rp-138", "query": "Calculate the SGPA for grades A (4 credits), B+ (3 credits) and O (3 credits).", "complexity_label": "medium", "hint": "medium", "category": "math", "repeat_of": null}
+{"id": "rp-139", "query": "Write a Python function to find the second largest element in a list.", "complexity_label": "medium", "hint": "medium", "category": "code", "repeat_of": null}
+{"id": "rp-140", "query": "How does public key encryption work? Keep it short.", "complexity_label": "medium", "hint": null, "category": "explain", "repeat_of": null}
+{"id": "rp-141", "query": "What does GPU stand for?", "complexity_label": "low", "hint": "low", "category": "acronym", "repeat_of": null}
+{"id": "rp-142", "query": "Write a detailed 1000-word essay on why open-source software matters for developing countries, with examples and a conclusion.", "complexity_label": "high", "hint": null, "category": "essay", "repeat_of": null}
+{"id": "rp-143", "query": "Calculate the probability of getting two heads in three coin tosses.", "complexity_label": "medium", "hint": null, "category": "math", "repeat_of": null}
+{"id": "rp-144", "query": "What does IDE stand for?", "complexity_label": "low", "hint": null, "category": "acronym", "repeat_of": null}
+{"id": "rp-145", "query": "What is a semaphore?", "complexity_label": "low", "hint": "low", "category": "definition", "repeat_of": null}
+{"id": "rp-146", "query": "Define an API.", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": null}
+{"id": "rp-147", "query": "Write a detailed 1000-word essay on how databases evolved from files to distributed systems, with examples and a conclusion.", "complexity_label": "high", "hint": null, "category": "essay", "repeat_of": null}
+{"id": "rp-148", "query": "Write a detailed 1000-word essay on cybersecurity challenges for small businesses, with examples and a conclusion.", "complexity_label": "high", "hint": null, "category": "essay", "repeat_of": null}
+{"id": "rp-149", "query": "Prove that the greedy algorithm for activity selection is optimal.", "complexity_label": "high", "hint": null, "category": "proof", "repeat_of": null}
+{"id": "rp-150", "query": "Design an API rate limiter. Cover the data model, API endpoints, scaling strategy and failure handling in detail.", "complexity_label": "high", "hint": null, "category": "design", "repeat_of": null}
+{"id": "rp-151", "query": "What is a subnet mask?", "complexity_label": "low", "hint": "low", "category": "definition", "repeat_of": null}
+{"id": "rp-152", "query": "What is the time complexity of binary search and why?", "complexity_label": "medium", "hint": "medium", "category": "complexity", "repeat_of": null}
+{"id": "rp-153", "query": "Compare processes and threads.", "complexity_label": "medium", "hint": "high", "category": "compare", "repeat_of": null}
+{"id": "rp-154", "query": "Write a Python function to check whether a number is prime.", "complexity_label": "medium", "hint": "medium", "category": "code", "repeat_of": null}
+{"id": "rp-155", "query": "What is cache memory?", "complexity_label": "low", "hint": "low", "category": "definition", "repeat_of": null}
+{"id": "rp-156", "query": "Define polymorphism.", "complexity_label": "low", "hint": "low", "category": "definition", "repeat_of": null}
+{"id": "rp-157", "query": "Write a Python function to merge two sorted lists.", "complexity_label": "medium", "hint": "high", "category": "code", "repeat_of": null}
+{"id": "rp-158", "query": "Give a one-line definition of a database index.", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": null}
+{"id": "rp-159", "query": "What is overfitting?", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": null}
+{"id": "rp-160", "query": "(a) Explain normalization. (b) Compare normalization with denormalization, giving two real-world examples. (c) Recommend one for a college ERP system and justify it.", "complexity_label": "high", "hint": "low", "category": "multi_part", "repeat_of": null}
+{"id": "rp-161", "query": "What is the full form of TCP?", "complexity_label": "low", "hint": "low", "category": "acronym", "repeat_of": null}
+{"id": "rp-162", "query": "Give a one-line definition of a binary search tree.", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": null}
+{"id": "rp-163", "query": "Compare TCP and UDP.", "complexity_label": "medium", "hint": null, "category": "compare", "repeat_of": null}
+{"id": "rp-164", "query": "Write a detailed 1000-word essay on the impact of AI on software engineering jobs, with examples and a conclusion.", "complexity_label": "high", "hint": null, "category": "essay", "repeat_of": null}
+{"id": "rp-165", "query": "How does JWT authentication work? Keep it short.", "complexity_label": "medium", "hint": "medium", "category": "explain", "repeat_of": null}
+{"id": "rp-166", "query": "What does DNS stand for?", "complexity_label": "low", "hint": "low", "category": "acronym", "repeat_of": null}
+{"id": "rp-167", "query": "How does Python decorators work? Keep it short.", "complexity_label": "medium", "hint": "medium", "category": "explain", "repeat_of": null}
+{"id": "rp-168", "query": "Explain how database indexing works with a simple example.", "complexity_label": "medium", "hint": null, "category": "explain", "repeat_of": null}
+{"id": "rp-169", "query": "Define a pointer.", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": null}
+{"id": "rp-170", "query": "Write a Python function to convert Celsius to Fahrenheit for a list of values.", "complexity_label": "medium", "hint": null, "category": "code", "repeat_of": null}
+{"id": "rp-171", "query": "Compare supervised learning and unsupervised learning.", "complexity_label": "medium", "hint": null, "category": "compare", "repeat_of": null}
+{"id": "rp-172", "query": "How does TCP congestion control work? Keep it short.", "complexity_label": "medium", "hint": "low", "category": "explain", "repeat_of": null}
+{"id": "rp-173", "query": "Explain how public key encryption works with a simple example.", "complexity_label": "medium", "hint": null, "category": "explain", "repeat_of": null}
+{"id": "rp-174", "query": "Explain how binary search works with a simple example.", "complexity_label": "medium", "hint": null, "category": "explain", "repeat_of": null}
+{"id": "rp-175", "query": "How does the virtual DOM in React work? Keep it short.", "complexity_label": "medium", "hint": null, "category": "explain", "repeat_of": null}
+{"id": "rp-176", "query": "Design a distributed file storage service. Cover the data model, API endpoints, scaling strategy and failure handling in detail.", "complexity_label": "high", "hint": "high", "category": "design", "repeat_of": null}
+{"id": "rp-177", "query": "Derive the backpropagation weight update for a two-layer neural network step by step, explaining every step.", "complexity_label": "high", "hint": "high", "category": "derivation", "repeat_of": null}
+{"id": "rp-178", "query": "What is a loop?", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": null}
+{"id": "rp-179", "query": "Design a chat application with offline message delivery. Cover the data model, API endpoints, scaling strategy and failure handling in detail.", "complexity_label": "high", "hint": null, "category": "design", "repeat_of": null}
+{"id": "rp-180", "query": "What is TCP?", "complexity_label": "low", "hint": "low", "category": "definition", "repeat_of": null}
+{"id": "rp-181", "query": "What does JVM stand for?", "complexity_label": "low", "hint": "low", "category": "acronym", "repeat_of": null}
+{"id": "rp-182", "query": "How does DNS resolution work? Keep it short.", "complexity_label": "medium", "hint": null, "category": "explain", "repeat_of": null}
+{"id": "rp-183", "query": "Explain how garbage collection in Java works with a simple example.", "complexity_label": "medium", "hint": null, "category": "explain", "repeat_of": null}
+{"id": "rp-184", "query": "Derive the closed form of the recurrence T(n) = 2T(n/2) + n step by step, explaining every step.", "complexity_label": "high", "hint": null, "category": "derivation", "repeat_of": null}
+{"id": "rp-185", "query": "What is normalization?", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": null}
+{"id": "rp-186", "query": "What is normalization?", "complexity_label": "low", "hint": "low", "category": "definition", "repeat_of": "rp-185"}
+{"id": "rp-187", "query": "Can you tell me: give a one-line definition of a binary search tree.", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": "rp-162"}
+{"id": "rp-188", "query": "write a detailed 1000-word essay on the role of entrance exams in engineering admissions, with examples and a conclusion", "complexity_label": "high", "hint": null, "category": "essay", "repeat_of": "rp-019"}
+{"id": "rp-189", "query": "Write a Python function to check whether a string is a palindrome, please?", "complexity_label": "medium", "hint": null, "category": "code", "repeat_of": "rp-009"}
+{"id": "rp-190", "query": "List the advantages and disadvantages of recursion.", "complexity_label": "medium", "hint": null, "category": "list", "repeat_of": "rp-079"}
+{"id": "rp-191", "query": "Can you tell me: (a) Explain monoliths. (b) Compare monoliths with microservices, giving two real-world examples. (c) Recommend one for a college ERP system and justify it.", "complexity_label": "high", "hint": "high", "category": "multi_part", "repeat_of": "rp-066"}
+{"id": "rp-192", "query": "what is encapsulation", "complexity_label": "low", "hint": "medium", "category": "definition", "repeat_of": "rp-133"}
+{"id": "rp-193", "query": "Calculate the probability of getting two heads in three coin tosses, please?", "complexity_label": "medium", "hint": null, "category": "math", "repeat_of": "rp-143"}
+{"id": "rp-194", "query": "What is a list comprehension?", "complexity_label": "low", "hint": null, "category": "definition", "repeat_of": "rp-068"}
+{"id": "rp-195", "query": "Can you tell me: give a one-line definition of a lambda function.", "complexity_label": "low", "hint": "low", "category": "definition", "repeat_of": "rp-077"}
+{"id": "rp-196", "query": "explain how jwt authentication works with a simple example", "complexity_label": "medium", "hint": null, "category": "explain", "repeat_of": "rp-036"}
+{"id": "rp-197", "query": "What is the time complexity of binary search and why, please?", "complexity_label": "medium", "hint": "medium", "category": "complexity", "repeat_of": "rp-152"}
+{"id": "rp-198", "query": "Compare supervised learning and unsupervised learning.", "complexity_label": "medium", "hint": "medium", "category": "compare", "repeat_of": "rp-171"}
+{"id": "rp-199", "query": "Can you tell me: write a Python function to convert Celsius to Fahrenheit for a list of values.", "complexity_label": "medium", "hint": null, "category": "code", "repeat_of": "rp-170"}
+{"id": "rp-200", "query": "define a loop", "complexity_label": "low", "hint": "low", "category": "definition", "repeat_of": "rp-118"}

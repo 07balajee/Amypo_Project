@@ -13,6 +13,7 @@ dependencies = [
     "psutil>=6.0",
     "numpy>=1.26",
     "joblib>=1.4",
+    "pymysql>=1.1",              # pure-Python MySQL driver (~50 KB), used by app/core/db/conn.py
 ]
 
 # Split by service so each container only installs what it needs (8 GB RAM budget, §3).
@@ -57,4 +58,4 @@ build-backend = "setuptools.build_meta"
 include = ["app*"]
 
 [tool.setuptools.package-data]
-"app.core.db" = ["*.sql"]
+"app.core.db" = ["mysql/*.sql", "sqlite/*.sql"]

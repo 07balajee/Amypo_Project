@@ -1,0 +1,31 @@
+id,name
+sk_python,Python
+sk_java,Java
+sk_c,C
+sk_cpp,C++
+sk_sql,SQL
+sk_dsa,Data Structures and Algorithms
+sk_dbms,DBMS Concepts
+sk_os,Operating Systems
+sk_cn,Computer Networks
+sk_oop,Object-Oriented Programming
+sk_ml,Machine Learning
+sk_dl,Deep Learning
+sk_statistics,Statistics
+sk_excel,Excel
+sk_power_bi,Power BI
+sk_tableau,Tableau
+sk_html_css,HTML and CSS
+sk_javascript,JavaScript
+sk_react,React
+sk_nodejs,Node.js
+sk_django,Django
+sk_spring,Spring Boot
+sk_git,Git
+sk_linux,Linux
+sk_aws,AWS
+sk_docker,Docker
+sk_communication,Communication
+sk_aptitude,Quantitative Aptitude
+sk_system_design,System Design
+sk_testing,Software Testing

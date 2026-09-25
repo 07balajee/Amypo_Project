@@ -30,11 +30,30 @@ interfaces, so swapping in the real data later means writing one adapter + a map
 `cloud_api` is NOT a real cloud provider. It is a **self-hosted "remote tier"**: a second llama.cpp server running a
 larger model, which *simulates* a paid cloud endpoint:
 - metered price (INR per 1K tokens, from `data/synthetic/pricing.yaml`),
-- a quota counter (persisted in SQLite),
+- a quota counter (persisted in MySQL),
 - injected latency derived from the simulated bandwidth.
 
 The router code talks to it through the same gateway interface, so a real provider could be plugged in later
 without router changes. Document this clearly in README and the model card.
+
+## 2a. Adding a company from a job description (ADR-2)
+
+A company may arrive with a day's notice as a free-text job description. Add it **incrementally**, never with a
+full reindex. Planned for M6: `POST /api/v1/admin/companies` (staff only).
+1. **Extract.** The local model turns the JD into structured criteria (role, CTC, min CGPA, max backlogs,
+   eligible branches, required skills + minimum proficiency) with a strict JSON schema. Missing fields fall back
+   to policy defaults (e.g. min attendance 75%). Extraction is the only LLM step.
+2. **Normalise skills.** Map the JD's skill names onto the canonical `skills` table (rapidfuzz, then MiniLM
+   cosine). Anything that doesn't map is flagged, never silently dropped or invented.
+3. **Staff confirm.** Return the extracted criteria as a draft; nothing is saved until a staff user confirms or
+   edits it. A misread cutoff (7.5 → 5.7) would silently corrupt every eligibility answer for that company.
+4. **Upsert.** Insert or replace one `companies` + `company_criteria` row, and add the JD text as one document
+   (chunks + Chroma + BM25), all in one transaction. Answers cached for that company are invalidated, not the
+   whole cache. This takes seconds.
+
+Ranking stays deterministic (criteria from step 3, match score from §8). We deliberately do **not** rank
+students by embedding similarity to the JD: a cosine score can't be cited as a record, and exact criteria
+already cover the grading on groundedness and hallucination.
 
 ## 3. Architecture
 
@@ -45,9 +64,9 @@ Clients / Streamlit chat
    │                     → Cache (exact + semantic)
    │                     → Inference Gateway → llama.cpp local tier (:8081) / remote tier (:8082)
    │                     → Offline Fallback (no LLM)
-   │     → ops.db (SQLite WAL) → Dashboard (:8501)
+   │     → amypo_ops (MySQL) → Dashboard (:8501)
    └── Q&A API (:8001)  POST /api/v1/ask, GET /api/v1/health, POST /api/v1/admin/reindex
-         Classifier → Structured path (SQL templates, eligibility, matching, skill gap) → amypo.db
+         Classifier → Structured path (SQL templates, eligibility, matching, skill gap) → amypo (MySQL)
                     → Hybrid retrieval (BM25 + Chroma vectors, RRF) → grounded prompt → Router /route
                     → citation verifier + confidence → answer
 ```
@@ -64,17 +83,18 @@ Clients / Streamlit chat
 - Use image `ghcr.io/ggml-org/llama.cpp:server` (verify tag). Bake GGUF weights into a `models` volume/image
   at build time (verify exact HF repo/file names before hardcoding:
   `Qwen/Qwen2.5-1.5B-Instruct-GGUF`, `bartowski/Llama-3.2-3B-Instruct-GGUF`).
-- `.env` sets `COMPOSE_PROFILES=router,qa` so plain `docker compose up` runs everything. Compose unions
+- `.env` sets `COMPOSE_PROFILES=router,qa,mysql` so plain `docker compose up` runs everything. Compose unions
   `--profile` flags with whatever `COMPOSE_PROFILES` resolves to, so an isolated single-PS submission
-  must override the env var itself: `COMPOSE_PROFILES=router docker compose up` = PS1 only,
-  `COMPOSE_PROFILES=qa docker compose up` = PS7 only.
+  must override the env var itself: `COMPOSE_PROFILES=router,mysql docker compose up` = PS1 only,
+  `COMPOSE_PROFILES=qa,mysql docker compose up` = PS7 only. Drop `mysql` only when pointing at a host
+  MySQL via `DB_HOST` in `.env`.
 - Internal network only. Add a `docker-compose.offline.yml` override that sets no-egress for the offline test.
 - Each Python service may load its own MiniLM embedder (~100 MB each) — acceptable.
 
 ## 4. Tech stack
 
-Python 3.11, FastAPI + Uvicorn, pydantic v2 + pydantic-settings, httpx (async), SQLite (WAL) via `sqlite3`
-or SQLAlchemy Core, ChromaDB (persistent, local), `rank-bm25`, `sentence-transformers` (all-MiniLM-L6-v2),
+Python 3.11, FastAPI + Uvicorn, pydantic v2 + pydantic-settings, httpx (async), MySQL 8 via PyMySQL (`core/db/conn.py`;
+SQLite backend kept for the test suite only), ChromaDB (persistent, local), `rank-bm25`, `sentence-transformers` (all-MiniLM-L6-v2),
 FAISS (flat IP index for semantic cache) or numpy brute force, scikit-learn (complexity + intent classifiers),
 psutil, Streamlit, pdfplumber, python-docx, pytest, schemathesis, ruff. Package manager: `uv` (fallback pip).
 Redis is optional — default to an in-process LRU; keep the cache behind an interface.
@@ -256,8 +276,13 @@ left or `NOT_FOUND` → abstain. `sources[]` = only chunks cited by surviving se
 `0.4*s_ret + 0.4*s_sup + 0.2*s_kept`.
 
 ### Placement (deterministic)
-- Eligible iff all: `cgpa >= min_cgpa`, `backlogs <= max_backlogs`, `attendance_pct >= min_attendance`,
-  each required skill proficiency ≥ its minimum. Answer lists each criterion pass/fail with cited row ids.
+Placement questions are **filter-then-rank over SQL rows, never retrieval**: vector similarity has no notion of a
+numeric cutoff. The LLM only narrates results that were already computed and cited.
+- Eligible iff all: student's branch in `eligible_depts_json` (NULL = all branches), `cgpa >= min_cgpa`,
+  `backlogs <= max_backlogs` (standing/uncleared backlogs), average course attendance `>= min_attendance`, and
+  each required skill proficiency ≥ its minimum. The answer lists each criterion pass/fail with cited row ids.
+- Staff "top N for company X": hard-filter eligible students in SQL, rank by match score, return the top N,
+  each with cited rows. Also list **near misses** (students failing exactly one criterion) with their skill gap.
 - Match score (0–100): `40*skill_coverage + 25*norm(cgpa) + 20*norm(coding_score) + 15*norm(projects)`
   (weights in config, stated in the answer).
 - Skill gap: required − student's skills (or proficiency shortfall) → `module_skill_map` → modules/tools to take,
@@ -278,13 +303,15 @@ it, so benchmarks are auto-derived.
   placement policy (one-offer rule, dream-company exception), academic integrity.
 - Include a document with an embedded prompt-injection line to test the verifier.
 
-**Structured records** (`amypo.db` via `ingest/adapters/synthetic.py`):
+**Structured records** (`amypo` database via `ingest/adapters/synthetic.py`):
 - `users` (student/staff roles), `students` (200 rows: id, name, dept, year, cgpa, backlogs, coding_score,
   projects_count), `courses` (8), `enrollments`, `grades` (internal/external/total/grade), `attendance`
   (per student-course %), `schedules` (timetable + exam dates), `skills` (~30), `student_skills`
   (proficiency 0–5), `companies` (10 roles e.g. "Zoho SDE", "TCS Digital", "Infosys Data Analyst"),
-  `company_criteria` (min_cgpa, max_backlogs, min_attendance, required_skills_json), `module_skill_map`.
-- Ensure edge cases: students exactly at thresholds, one backlog over, missing skill, 74.9% attendance.
+  `company_criteria` (min_cgpa, max_backlogs, min_attendance, required_skills_json, eligible_depts_json),
+  `companies.ctc_lpa` (≥ 10 LPA = dream company), `module_skill_map`.
+- Ensure edge cases: students exactly at thresholds, one backlog over, missing skill, 74.9% attendance,
+  ineligible branch.
 
 **Past queries:** `past_queries.csv` ~300 rows (paraphrase clusters to exercise semantic cache).
 
@@ -307,9 +334,10 @@ mapping section. Nothing outside `ingest/adapters` and `config.yaml` may assume 
 
 ## 10. Data model
 
-`ops.db`: `route_log`, `qa_log`, `quota_ledger`, `cache_entry` (if persisted), `schema_version`.
-`amypo.db`: `documents`, `chunks`, plus the record tables in §9.
-Write SQL schema files in `core/db/`, apply idempotently on startup.
+`amypo_ops` (MySQL): `route_log`, `qa_log`, `quota_ledger`, `cache_entry` (if persisted), `schema_version`.
+`amypo` (MySQL): `documents`, `chunks`, plus the record tables in §9.
+Schema files live in `core/db/mysql/` (services) and `core/db/sqlite/` (tests); keep them in sync and
+apply idempotently on startup. Use `?` placeholders and SQL both dialects accept (e.g. `REPLACE INTO`).
 
 ## 11. config.yaml (all thresholds here; env overrides; no magic numbers in code)
 ```yaml

@@ -21,8 +21,8 @@ SERVICE_VERSION = "1.0.0"
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     app.state.settings = get_settings()
-    get_ops_conn()
-    get_amypo_conn()
+    get_ops_conn().close()  # applies schemas on startup
+    get_amypo_conn().close()
     yield
 
 
@@ -44,27 +44,26 @@ async def ask(req: AskRequest) -> AskResponse:
 
 
 def _log_ask(req: AskRequest, resp: AskResponse) -> None:
-    conn = get_ops_conn()
-    conn.execute(
-        """INSERT INTO qa_log
-           (ts, user_id, conversation_id, question, intent, path, answer, confidence, abstained,
-            route_request_id, sources_json)
-           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
-        (
-            datetime.now(UTC).isoformat(),
-            req.user_id,
-            req.conversation_id,
-            req.question,
-            resp.meta.intent,
-            resp.meta.path,
-            resp.answer,
-            resp.confidence,
-            int(resp.meta.abstained),
-            resp.meta.route_request_id,
-            "[]",
-        ),
-    )
-    conn.commit()
+    with get_ops_conn() as conn:
+        conn.execute(
+            """INSERT INTO qa_log
+               (ts, user_id, conversation_id, question, intent, path, answer, confidence, abstained,
+                route_request_id, sources_json)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+            (
+                datetime.now(UTC).isoformat(),
+                req.user_id,
+                req.conversation_id,
+                req.question,
+                resp.meta.intent,
+                resp.meta.path,
+                resp.answer,
+                resp.confidence,
+                int(resp.meta.abstained),
+                resp.meta.route_request_id,
+                "[]",
+            ),
+        )
 
 
 @app.post("/api/v1/admin/reindex")

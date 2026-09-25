@@ -50,7 +50,7 @@ Clients / Dashboard chat
 
 ## Tech stack
 
-Python 3.11, FastAPI, pydantic, SQLite, ChromaDB, rank-bm25, sentence-transformers (all-MiniLM-L6-v2),
+Python 3.11, FastAPI, pydantic, MySQL 8 (PyMySQL), ChromaDB, rank-bm25, sentence-transformers (all-MiniLM-L6-v2),
 scikit-learn, llama.cpp (Qwen2.5-1.5B-Instruct locally, Llama-3.2-3B-Instruct as the remote tier) and a
 Streamlit dashboard. Everything runs CPU-only in Docker.
 
@@ -67,9 +67,20 @@ docker compose up
 To run one service on its own:
 
 ```bash
-COMPOSE_PROFILES=router docker compose up   # router only
-COMPOSE_PROFILES=qa docker compose up       # Q&A (includes the router)
+COMPOSE_PROFILES=router,mysql docker compose up   # router only
+COMPOSE_PROFILES=qa,mysql docker compose up       # Q&A (includes the router)
 ```
+
+### Database
+
+The services use MySQL. `docker compose up` starts a bundled MySQL 8 container, which is reachable from the
+host on port 3307. To use a MySQL server installed on your PC instead, edit `.env`: remove `mysql` from
+`COMPOSE_PROFILES` and set `DB_HOST=host.docker.internal`, `DB_USER` and `DB_PASSWORD`. When running
+without Docker, set `DB__MYSQL__HOST`, `DB__MYSQL__USER` and `DB__MYSQL__PASSWORD`. The services create the
+`amypo_ops` and `amypo` databases and their tables on startup if the user has permission. Schemas live in
+`app/core/db/mysql/`.
+
+The test suite uses SQLite (`app/core/db/sqlite/`) instead, so `make test` needs no database server.
 
 To test offline with all network access blocked, add the `docker-compose.offline.yml` override.
 
@@ -83,6 +94,25 @@ make synth    # generate synthetic data into data/synthetic/
 make ingest   # index documents and load structured records
 make eval     # run router and Q&A evaluations
 ```
+
+## Data
+
+Until the real data arrives, the platform runs on **synthetic** data in [data/synthetic/](data/synthetic/):
+course syllabi, an FAQ, policies (as markdown, PDF and DOCX), 200 students with grades, attendance and
+skills, placement criteria for 10 companies, and the training and evaluation sets (router prompts,
+resource scenarios, Q&A benchmark, past queries).
+
+```bash
+python scripts/gen_synthetic.py                              # regenerate data/synthetic (seeded)
+python -m app.ingest.cli --db-url mysql://user:pass@host:3306/amypo   # load everything into MySQL
+```
+
+You can pass the connection string with `--db-url` or set `DB__MYSQL__URL`. Using the environment
+variable keeps the password out of your shell history. Loading is a full refresh, so it's safe to re-run.
+
+**Switching to the real data** means implementing
+[app/ingest/adapters/amypo.py](app/ingest/adapters/amypo.py) (it has a mapping checklist), setting
+`data.adapter: amypo` in `config.yaml`, and re-running the ingest command. Nothing else changes.
 
 ## Main endpoints
 

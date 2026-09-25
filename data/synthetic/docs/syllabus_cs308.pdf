@@ -1,0 +1,98 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Length 2767 >>
+stream
+BT 14 TL 56 736 Td
+/F2 12 Tf (CS308 Java Programming - Syllabus) Tj T*
+/F1 10 Tf (SYNTHETIC DATA: generated for development and testing, not an official AMYPO document.) Tj T*
+/F1 10 Tf () Tj T*
+/F2 12 Tf (Course Information) Tj T*
+/F1 10 Tf (- Course code: CS308) Tj T*
+/F1 10 Tf (- Credits: 3) Tj T*
+/F1 10 Tf (- Semester: 2025-26 EVEN) Tj T*
+/F1 10 Tf (- Prerequisites: CS101 Programming Fundamentals) Tj T*
+/F1 10 Tf () Tj T*
+/F2 12 Tf (Course Objectives) Tj T*
+/F1 10 Tf (- Write object-oriented programs in Java.) Tj T*
+/F1 10 Tf (- Use collections, generics, exceptions and streams effectively.) Tj T*
+/F1 10 Tf (- Build concurrent and database-backed Java applications.) Tj T*
+/F1 10 Tf () Tj T*
+/F2 12 Tf (Unit 1: Java Fundamentals) Tj T*
+/F1 10 Tf (Unit 1 of CS308 covers JVM, JRE and JDK, data types and operators, control statements,) Tj T*
+/F1 10 Tf (arrays and strings and methods and overloading.) Tj T*
+/F1 10 Tf () Tj T*
+/F2 12 Tf (Unit 2: Object-Oriented Programming) Tj T*
+/F1 10 Tf (Unit 2 of CS308 covers classes and objects, inheritance and polymorphism, abstract classes) Tj T*
+/F1 10 Tf (and interfaces, packages and access modifiers and exception handling.) Tj T*
+/F1 10 Tf () Tj T*
+/F2 12 Tf (Unit 3: Collections and Generics) Tj T*
+/F1 10 Tf (Unit 3 of CS308 covers List, Set and Map, iterators, generics, Comparable and Comparator and) Tj T*
+/F1 10 Tf (streams and lambda expressions.) Tj T*
+/F1 10 Tf () Tj T*
+/F2 12 Tf (Unit 4: Concurrency) Tj T*
+/F1 10 Tf (Unit 4 of CS308 covers threads and Runnable, synchronization, executor services, concurrent) Tj T*
+/F1 10 Tf (collections and CompletableFuture.) Tj T*
+/F1 10 Tf () Tj T*
+/F2 12 Tf (Unit 5: Java Applications) Tj T*
+/F1 10 Tf (Unit 5 of CS308 covers JDBC, file I/O, unit testing with JUnit, build tools: Maven and) Tj T*
+/F1 10 Tf (introduction to Spring Boot.) Tj T*
+/F1 10 Tf () Tj T*
+/F2 12 Tf (Course Outcomes) Tj T*
+/F1 10 Tf (- CO1: Write Java programs using OOP principles.) Tj T*
+/F1 10 Tf (- CO2: Use the collections framework and generics.) Tj T*
+/F1 10 Tf (- CO3: Handle exceptions and write unit tests.) Tj T*
+/F1 10 Tf (- CO4: Write thread-safe concurrent code.) Tj T*
+/F1 10 Tf (- CO5: Connect Java applications to a database with JDBC.) Tj T*
+/F1 10 Tf () Tj T*
+/F2 12 Tf (Assessment) Tj T*
+/F1 10 Tf (CS308 is assessed out of 100 marks: 40 internal marks and 60 external marks. Internal marks) Tj T*
+/F1 10 Tf (consist of two Continuous Assessment Tests \(CAT 1 and CAT 2\) of 15 marks each and) Tj T*
+/F1 10 Tf (assignments worth 10 marks. The end-semester examination is conducted for 100 marks and) Tj T*
+/F1 10 Tf (scaled to 60. Lab work carries 20 of the 40 internal marks, and the CAT weight is halved.) Tj T*
+/F1 10 Tf () Tj T*
+/F2 12 Tf (Textbook) Tj T*
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 100 >>
+stream
+BT 14 TL 56 736 Td
+/F1 10 Tf (Herbert Schildt, Java: The Complete Reference, 12th edition.) Tj T*
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000218 00000 n 
+0000000320 00000 n 
+0000003139 00000 n 
+0000003275 00000 n 
+0000003426 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+3562
+%%EOF

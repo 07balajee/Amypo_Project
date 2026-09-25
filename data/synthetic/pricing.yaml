@@ -1,0 +1,16 @@
+note: SYNTHETIC. Simulated metered pricing for the self-hosted remote tier (ADR-1);
+  no real provider.
+currency: INR
+remote_tier:
+  input_per_1k_tokens: 0.25
+  output_per_1k_tokens: 1.0
+  min_charge_per_request: 0.02
+local_tier:
+  input_per_1k_tokens: 0.0
+  output_per_1k_tokens: 0.0
+quota:
+  unit: requests
+  daily_limit: 500
+network:
+  base_rtt_ms: 120
+  payload_kb_per_request: 4

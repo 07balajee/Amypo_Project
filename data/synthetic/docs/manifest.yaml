@@ -1,0 +1,62 @@
+# SYNTHETIC documents. Read by app/ingest/adapters/synthetic.py.
+documents:
+- doc_id: syllabus_cs301
+  title: CS301 Database Management Systems Syllabus
+  doc_type: syllabus
+  file: syllabus_cs301.md
+- doc_id: syllabus_cs302
+  title: CS302 Operating Systems Syllabus
+  doc_type: syllabus
+  file: syllabus_cs302.md
+- doc_id: syllabus_cs303
+  title: CS303 Computer Networks Syllabus
+  doc_type: syllabus
+  file: syllabus_cs303.md
+- doc_id: syllabus_cs304
+  title: CS304 Design and Analysis of Algorithms Syllabus
+  doc_type: syllabus
+  file: syllabus_cs304.md
+- doc_id: syllabus_cs305
+  title: CS305 Machine Learning Syllabus
+  doc_type: syllabus
+  file: syllabus_cs305.pdf
+- doc_id: syllabus_cs306
+  title: CS306 Web Technologies Syllabus
+  doc_type: syllabus
+  file: syllabus_cs306.docx
+- doc_id: syllabus_cs307
+  title: CS307 Python Programming Syllabus
+  doc_type: syllabus
+  file: syllabus_cs307.md
+- doc_id: syllabus_cs308
+  title: CS308 Java Programming Syllabus
+  doc_type: syllabus
+  file: syllabus_cs308.pdf
+- doc_id: faq
+  title: Frequently Asked Questions
+  doc_type: faq
+  file: faq.md
+- doc_id: policy_attendance
+  title: Attendance Policy
+  doc_type: policy
+  file: policy_attendance.md
+- doc_id: policy_exam
+  title: Examination and Re-evaluation Policy
+  doc_type: policy
+  file: policy_exam.md
+- doc_id: policy_grading
+  title: Grading and CGPA Policy
+  doc_type: policy
+  file: policy_grading.md
+- doc_id: policy_placement
+  title: Placement Policy
+  doc_type: policy
+  file: policy_placement.pdf
+- doc_id: policy_integrity
+  title: Academic Integrity Policy
+  doc_type: policy
+  file: policy_integrity.docx
+- doc_id: notice_hostel_w32
+  title: Hostel Notice Board - Week 32
+  doc_type: other
+  file: notice_hostel_w32.md

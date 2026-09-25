@@ -1,0 +1,76 @@
+skill_id,module,weight
+sk_python,CS307 Python Programming,1.0
+sk_python,AMYPO Python Bootcamp (2 weeks),0.8
+sk_python,AMYPO Python Practice Track,0.5
+sk_java,CS308 Java Programming,1.0
+sk_java,AMYPO Java Bootcamp (2 weeks),0.8
+sk_java,AMYPO Java Practice Track,0.5
+sk_c,AMYPO C Bootcamp (2 weeks),0.8
+sk_c,AMYPO C Practice Track,0.5
+sk_cpp,AMYPO C++ Bootcamp (2 weeks),0.8
+sk_cpp,AMYPO C++ Practice Track,0.5
+sk_sql,CS301 DBMS - Unit 3: SQL,1.0
+sk_sql,AMYPO SQL Bootcamp (2 weeks),0.8
+sk_sql,AMYPO SQL Practice Track,0.5
+sk_dsa,CS304 DAA - Units 2-4,1.0
+sk_dsa,AMYPO Data Structures and Algorithms Bootcamp (2 weeks),0.8
+sk_dsa,AMYPO Data Structures and Algorithms Practice Track,0.5
+sk_dbms,CS301 DBMS - Unit 4: Normalization,1.0
+sk_dbms,AMYPO DBMS Concepts Bootcamp (2 weeks),0.8
+sk_dbms,AMYPO DBMS Concepts Practice Track,0.5
+sk_os,CS302 Operating Systems,1.0
+sk_os,AMYPO Operating Systems Bootcamp (2 weeks),0.8
+sk_os,AMYPO Operating Systems Practice Track,0.5
+sk_cn,CS303 Computer Networks,1.0
+sk_cn,AMYPO Computer Networks Bootcamp (2 weeks),0.8
+sk_cn,AMYPO Computer Networks Practice Track,0.5
+sk_oop,CS308 Java - Unit 2: OOP,1.0
+sk_oop,AMYPO Object-Oriented Programming Bootcamp (2 weeks),0.8
+sk_oop,AMYPO Object-Oriented Programming Practice Track,0.5
+sk_ml,CS305 Machine Learning,1.0
+sk_ml,AMYPO Machine Learning Bootcamp (2 weeks),0.8
+sk_ml,AMYPO Machine Learning Practice Track,0.5
+sk_dl,AMYPO Deep Learning Bootcamp (2 weeks),0.8
+sk_dl,AMYPO Deep Learning Practice Track,0.5
+sk_statistics,CS305 ML - Unit 5: Evaluation,1.0
+sk_statistics,AMYPO Statistics Bootcamp (2 weeks),0.8
+sk_statistics,AMYPO Statistics Practice Track,0.5
+sk_excel,AMYPO Excel Bootcamp (2 weeks),0.8
+sk_excel,AMYPO Excel Practice Track,0.5
+sk_power_bi,AMYPO Power BI Bootcamp (2 weeks),0.8
+sk_power_bi,AMYPO Power BI Practice Track,0.5
+sk_tableau,AMYPO Tableau Bootcamp (2 weeks),0.8
+sk_tableau,AMYPO Tableau Practice Track,0.5
+sk_html_css,CS306 Web Tech - Unit 1: HTML and CSS,1.0
+sk_html_css,AMYPO HTML and CSS Bootcamp (2 weeks),0.8
+sk_html_css,AMYPO HTML and CSS Practice Track,0.5
+sk_javascript,CS306 Web Tech - Unit 2: JavaScript,1.0
+sk_javascript,AMYPO JavaScript Bootcamp (2 weeks),0.8
+sk_javascript,AMYPO JavaScript Practice Track,0.5
+sk_react,CS306 Web Tech - Unit 3: Front-end Frameworks,1.0
+sk_react,AMYPO React Bootcamp (2 weeks),0.8
+sk_react,AMYPO React Practice Track,0.5
+sk_nodejs,CS306 Web Tech - Unit 4: Server-side,1.0
+sk_nodejs,AMYPO Node.js Bootcamp (2 weeks),0.8
+sk_nodejs,AMYPO Node.js Practice Track,0.5
+sk_django,AMYPO Django Bootcamp (2 weeks),0.8
+sk_django,AMYPO Django Practice Track,0.5
+sk_spring,CS308 Java - Unit 5: Spring Boot,1.0
+sk_spring,AMYPO Spring Boot Bootcamp (2 weeks),0.8
+sk_spring,AMYPO Spring Boot Practice Track,0.5
+sk_git,AMYPO Git Bootcamp (2 weeks),0.8
+sk_git,AMYPO Git Practice Track,0.5
+sk_linux,AMYPO Linux Bootcamp (2 weeks),0.8
+sk_linux,AMYPO Linux Practice Track,0.5
+sk_aws,AMYPO AWS Bootcamp (2 weeks),0.8
+sk_aws,AMYPO AWS Practice Track,0.5
+sk_docker,AMYPO Docker Bootcamp (2 weeks),0.8
+sk_docker,AMYPO Docker Practice Track,0.5
+sk_communication,AMYPO Communication Bootcamp (2 weeks),0.8
+sk_communication,AMYPO Communication Practice Track,0.5
+sk_aptitude,AMYPO Quantitative Aptitude Bootcamp (2 weeks),0.8
+sk_aptitude,AMYPO Quantitative Aptitude Practice Track,0.5
+sk_system_design,AMYPO System Design Bootcamp (2 weeks),0.8
+sk_system_design,AMYPO System Design Practice Track,0.5
+sk_testing,AMYPO Software Testing Bootcamp (2 weeks),0.8
+sk_testing,AMYPO Software Testing Practice Track,0.5

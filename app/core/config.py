@@ -5,10 +5,11 @@ Env overrides use double-underscore nesting, e.g. GATEWAY__LOCAL_URL=http://loca
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Any
+from typing import Any, Literal
+from urllib.parse import unquote, urlsplit
 
 import yaml
-from pydantic import BaseModel
+from pydantic import BaseModel, model_validator
 from pydantic_settings import BaseSettings, PydanticBaseSettingsSource, SettingsConfigDict
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -121,12 +122,52 @@ class GatewayConfig(BaseModel):
 
 
 class DataConfig(BaseModel):
-    adapter: str = "synthetic"
+    adapter: str = "synthetic"  # synthetic | amypo (see app/ingest/adapters/)
+    synthetic_dir: str = "data/synthetic"
+
+
+class MySQLConfig(BaseModel):
+    # Optional connection string, e.g. mysql://user:pass@host:3306/amypo (DB__MYSQL__URL or
+    # `ingest --db-url`). When set it overrides host/port/user/password, and a path overrides
+    # amypo_database. Never commit a real one to config.yaml.
+    url: str = ""
+    host: str = "localhost"
+    port: int = 3306
+    user: str = "amypo"
+    password: str = ""  # set via DB__MYSQL__PASSWORD, never committed in config.yaml
+    ops_database: str = "amypo_ops"
+    amypo_database: str = "amypo"
+    connect_timeout_s: int = 5
+
+    @model_validator(mode="after")
+    def _apply_url(self) -> MySQLConfig:
+        if not self.url:
+            return self
+        parts = urlsplit(self.url)
+        if parts.scheme not in ("mysql", "mysql+pymysql"):
+            raise ValueError(f"db.mysql.url must start with mysql://, got {parts.scheme!r}://")
+        self.host = parts.hostname or self.host
+        self.port = parts.port or self.port
+        if parts.username is not None:
+            self.user = unquote(parts.username)
+        if parts.password is not None:
+            self.password = unquote(parts.password)
+        if parts.path.strip("/"):
+            self.amypo_database = parts.path.strip("/")
+        return self
+
+
+class SQLiteConfig(BaseModel):
+    # Used by the test suite (no server needed). Relative paths resolve against `dir`; `~` expands.
+    dir: str = "~/.amypo/db"
+    ops_db_path: str = "ops.db"
+    amypo_db_path: str = "amypo.db"
 
 
 class DBConfig(BaseModel):
-    ops_db_path: str = "data/ops.db"
-    amypo_db_path: str = "data/amypo.db"
+    backend: Literal["mysql", "sqlite"] = "mysql"
+    mysql: MySQLConfig = MySQLConfig()
+    sqlite: SQLiteConfig = SQLiteConfig()
 
 
 class ServicesConfig(BaseModel):

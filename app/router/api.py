@@ -40,7 +40,7 @@ async def lifespan(app: FastAPI):
         remote_url=settings.gateway.remote_url,
     )
     app.state.monitor = get_monitor()
-    get_ops_conn()  # applies schema on startup
+    get_ops_conn().close()  # applies schema on startup
     yield
     await app.state.gateway.aclose()
 
@@ -113,35 +113,34 @@ async def route(req: RouteRequest) -> JSONResponse:
 
 
 def _log_decision(req: RouteRequest, resp: RouteResponse) -> None:
-    conn = get_ops_conn()
-    conn.execute(
-        """INSERT OR REPLACE INTO route_log
-           (request_id, ts, query, complexity_hint, complexity, complexity_prob, user_scope,
-            dry_run, routed_to, reasoning, latency_ms, estimated_cost, tokens_in, tokens_out,
-            cache_level, replanned, candidates_json, snapshot_json)
-           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
-        (
-            req.request_id,
-            datetime.now(UTC).isoformat(),
-            req.query,
-            req.complexity_hint,
-            resp.meta.complexity,
-            resp.meta.complexity_prob,
-            req.user_scope,
-            int(req.dry_run),
-            resp.routed_to,
-            resp.reasoning,
-            resp.latency_ms,
-            resp.estimated_cost,
-            resp.meta.tokens_in,
-            resp.meta.tokens_out,
-            resp.meta.cache_level,
-            int(resp.meta.replanned),
-            ",".join(resp.meta.candidates),
-            None,
-        ),
-    )
-    conn.commit()
+    with get_ops_conn() as conn:
+        conn.execute(
+            """REPLACE INTO route_log
+               (request_id, ts, query, complexity_hint, complexity, complexity_prob, user_scope,
+                dry_run, routed_to, reasoning, latency_ms, estimated_cost, tokens_in, tokens_out,
+                cache_level, replanned, candidates_json, snapshot_json)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+            (
+                req.request_id,
+                datetime.now(UTC).isoformat(),
+                req.query,
+                req.complexity_hint,
+                resp.meta.complexity,
+                resp.meta.complexity_prob,
+                req.user_scope,
+                int(req.dry_run),
+                resp.routed_to,
+                resp.reasoning,
+                resp.latency_ms,
+                resp.estimated_cost,
+                resp.meta.tokens_in,
+                resp.meta.tokens_out,
+                resp.meta.cache_level,
+                int(resp.meta.replanned),
+                ",".join(resp.meta.candidates),
+                None,
+            ),
+        )
 
 
 @app.post("/api/v1/admin/simulate")
@@ -164,13 +163,15 @@ async def admin_simulate(req: SimulateRequest) -> dict:
 
 @app.get("/api/v1/admin/decisions", response_model=list[DecisionLogEntry])
 async def admin_decisions(since: str | None = Query(default=None), limit: int = Query(default=50)) -> list[DecisionLogEntry]:
-    conn = get_ops_conn()
-    if since:
-        rows = conn.execute(
-            "SELECT * FROM route_log WHERE ts >= ? ORDER BY ts DESC LIMIT ?", (since, limit)
-        ).fetchall()
-    else:
-        rows = conn.execute("SELECT * FROM route_log ORDER BY ts DESC LIMIT ?", (limit,)).fetchall()
+    with get_ops_conn() as conn:
+        if since:
+            rows = conn.execute(
+                "SELECT * FROM route_log WHERE ts >= ? ORDER BY ts DESC LIMIT ?", (since, limit)
+            ).fetchall()
+        else:
+            rows = conn.execute(
+                "SELECT * FROM route_log ORDER BY ts DESC LIMIT ?", (limit,)
+            ).fetchall()
     return [
         DecisionLogEntry(
             request_id=r["request_id"],
